@@ -296,76 +296,146 @@ speak: none;
 				
 /**** audio navigation ****/
 
-.panel-player {width: 90%;}
+.panel-player {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
 
-.jp-seek-bar {
-display: block;
-background-color: blue;
-height: 25px;
 }
-
-.jp-play-bar {
-display: block;
-background-color: #000;
-height: 25px;
-}
-
-.panel-chapters{
-	margin: 20px 0 70px 100px;
-	padding: 0;
-}
-.panel-chapters li {
-	list-style-type: none;
-	float: left;
-	margin: 0 20px 0 0;
-}
-
 .ab-nav {
 	position: absolute; 
 	top: 0; 
 	left: 0;
 	width: 100%;
 	background-color: #333;  
-	z-index: 200; 
+	z-index: 200;
+	height: 30px;
+	border-top: 1px solid #444;
+overflow: hidden;
 	}
-
-.ab-nav:hover {opacity: .9; }
 
 .ab-nav a {color: #d3d3d3; display: block; line-height: 1;}
 
-.panel-player {
+.panel-player h4 {
+background-color: #eee;
+color: #000;
+margin: 0;
 position: absolute;
-top: -20px;
-left: 15px;
+top: 0;
+left: 0;
+height: 15px;
+width: 107px;
+padding: 5px 5px 10px 5px;
+border-right: 1px solid #222;
+font-size: 14px;
+z-index: 12;
 }
 
 .ab-nav .jp-play {
-font-size: 70px;
-
+font-size: 30px;
+color: #333;
+position: absolute;
+top: 0;
+left: 92px;
 }
 
 .ab-nav .jp-pause {
-font-size: 60px;
-margin-top: 5px;
+font-size: 30px;
+color: #333;
+position: absolute;
+top: 0;
+left: 91px;
 }
 
 .ab-nav .jp-play:hover {
-color: #fff;
+color: #444;
+}
+
+.jp-seek-bar {
+display: block;
+position: absolute;
+top: 0;
+left: 117px;
+background-color: #444;
+height: 30px;
+cursor: pointer;
+width: 82% !important;
+border-right: 1px solid #4f4f4f;
+}
+
+.jp-seek-bar p {
+margin: 0; 
+font-size: 12px; 
+padding-left: 1%;
+float: left;
+border-left: 1px solid #ddd;
+}
+
+#nr, #rent, #crime, #slowdown {
+	font-size: 11px;
+}
+
+#nr {
+	width: 33%;
+}
+
+#rent {
+	width: 13%;
+}
+
+#crime {
+	width: 33%;
+}
+
+#slowdown {
+	width: 13%;
+}
+
+.jp-play-bar {
+display: block;
+background-color: #666;
+height: 30px;
+
 }
 
 .active {
 	background-color: blue;
 }
 
-/* panel */
+.currentTime {
+text-align: right;
+font-size: 13px;
+display: block;
+float: right;
+margin-right: -36px;
+background-color: #000;
+padding: 3px;
+font-size: 11px;
+color: #ddd;
+}
 
-.panel {
-	position: relative;
-	background-color: #111;
-	box-shadow: 2px -1px 20px #000;
-	color: #ccc;
+#c-markers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
 	overflow: hidden;
-	/*margin-top: -20px;*/
+}
+
+#c-markers p {
+	height: 30px;
+	overflow: hidden;
+	padding-top: 7px;
+	
+}
+
+.jp-duration {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	font-size: 11px;
 }
 
 /**** title card ****/
@@ -1071,9 +1141,7 @@ right: 10px;
 	<div class="ab-nav">
 	
 	<div class="panel-player">
-		<h4><b>Boom</b>Town</h4>
-	
-		<p>
+		<h4><b>Boom</b>Town
 			<a href="javascript:;" class="jp-play icon-alone">
 				<span aria-hidden="true" data-icon="&#x25B6;"></span>
 				<span class="screen-reader-text">Play</span>
@@ -1082,14 +1150,22 @@ right: 10px;
 				<span aria-hidden="true" data-icon="&#x2389;"></span>
 				<span class="screen-reader-text">Pause</span>
 			</a>
-		</p>
+		</h4>
 		
 		<p>
 			<span class="jp-duration"></span>
 		</p>
 	
 		<div class="jp-seek-bar">
-			<div class="jp-play-bar"></div>
+			<div class="jp-play-bar">
+			</div>
+			
+			<div id="c-markers">
+			<p id="nr">Norman Rockwell</p>
+			<p id="rent">Business</p>
+			<p id="crime">Civic Issues</p>
+			<p id="slowdown">Slowdown</p>
+			</div>
 		</div><!-- /jp-seek-bar -->
 	</div>
 	
