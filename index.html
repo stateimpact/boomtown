@@ -62,13 +62,12 @@
 				supplied: "oga, mp3",
 				cssSelectorAncestor: "",
 				cssSelector: {
-					play: ".wl-play",
-					pause: ".wl-pause",
-					stop: "#stop",
+					play: ".jp-play",
+					pause: ".jp-pause",
 					seekBar: ".jp-seek-bar",
 					playBar: ".jp-play-bar",
-					currentTime: "#currentTime",
-					duration: "#duration"
+					currentTime: ".currentTime",
+					duration: ".jp-duration"
 				}
 			});
 			
@@ -328,7 +327,6 @@ height: 25px;
 	width: 100%;
 	background-color: #333;  
 	z-index: 200; 
-	opacity: 0.7;
 	}
 
 .ab-nav:hover {opacity: .9; }
@@ -341,17 +339,17 @@ top: -20px;
 left: 15px;
 }
 
-.ab-nav .wl-play {
+.ab-nav .jp-play {
 font-size: 70px;
 
 }
 
-.ab-nav .wl-pause {
+.ab-nav .jp-pause {
 font-size: 60px;
 margin-top: 5px;
 }
 
-.ab-nav .wl-play:hover {
+.ab-nav .jp-play:hover {
 color: #fff;
 }
 
@@ -1056,7 +1054,7 @@ right: 10px;
 		 <a id="title-button" href="javascript:;">
 			 <h1>Boom Town</h1>
 			 
-			 <h3>A Pennsylvania town takes stock of its transformation, five years after natural gas drilling came to town.</h3>
+			 <h3>Five years ago, natural gas drilling came to Towanda, Pennsylvania. The town has never been the same.</h3>
 			 
 			 <p id="title-play">
 			 	Play
@@ -1073,32 +1071,30 @@ right: 10px;
 	<div class="ab-nav">
 	
 	<div class="panel-player">
-	<p>
-	<a href="javascript:;" class="wl-play icon-alone">
-		<span aria-hidden="true" data-icon="&#x25B6;"></span>
-		<span class="screen-reader-text">Play</span>
-	</a>
-
-	<a href="javascript:;" class="wl-pause">
-		<span aria-hidden="true" data-icon="&#x2389;"></span>
-		<span class="screen-reader-text">Pause</span>
-	</a>
+		<h4><b>Boom</b>Town</h4>
 	
-	<b>
-	<span id="duration"></span>
-	</b>
-	</p>
+		<p>
+			<a href="javascript:;" class="jp-play icon-alone">
+				<span aria-hidden="true" data-icon="&#x25B6;"></span>
+				<span class="screen-reader-text">Play</span>
+			</a>
+			<a href="javascript:;" class="jp-pause">
+				<span aria-hidden="true" data-icon="&#x2389;"></span>
+				<span class="screen-reader-text">Pause</span>
+			</a>
+		</p>
+		
+		<p>
+			<span class="jp-duration"></span>
+		</p>
 	
 		<div class="jp-seek-bar">
 			<div class="jp-play-bar"></div>
 		</div><!-- /jp-seek-bar -->
 	</div>
 	
+	<!--
 	<ul class="panel-chapters">
-		<li id="boom-home">
-			<a href="javascript:;" id="bh">Boom Town</a>
-		</li>
-	
 		<li>
 			<a href="javascript:;" id="c1">
 				Norman Rockwell	
@@ -1124,10 +1120,8 @@ right: 10px;
 				Slowdown
 			</a>
 		</li>
-		
-		
-		
 	</ul>
+	-->
 	</div><!-- /ab-nav -->
 	
 	
@@ -1139,7 +1133,7 @@ right: 10px;
 		<div id="notebooks">
 			<div class="carousel">
 				<div id="first-note" data-before="am.html">
-					<img src="img/restaurant1.jpg">
+					<img src="img/flower-bridge.jpg">
 				</div>		
 			</div><!-- /carousel -->
 	    </div><!-- /notebooks -->

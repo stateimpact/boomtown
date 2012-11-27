@@ -19,7 +19,7 @@ pop.webpage({
 pop.text({
 start: 1,
 end: 19,
-text:'<div id="wl-intro" class="animated fadeIn"><h2>Music and Intro TBD</h2><p><b>The Fracking Boom began in 2008.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>',
+text:'<div id="wl-intro" class="animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
 target:'titlecard'
 });
 
