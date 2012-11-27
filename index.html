@@ -1,0 +1,1176 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Fracktown | NPR StateImpact</title>
+	
+	<meta name="robots" content="nofollow" />
+	
+<meta name="description" content="">
+<meta name="author" content="NPR">
+<meta property="og:title" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:site_name" content="NPR">
+<meta property="fb:admins" content="10217706">
+<meta property="og:description" content="">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="shortcut icon" href="http://stateimpact.npr.org/wp-content/themes/si-hub/img/favicon.png">
+	
+	<link rel="apple-touch-icon-precomposed" href="http://stateimpact.npr.org/wp-content/themes/si-hub/img/apple-touch-icon-precomposed.png">
+	
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Begin JavaScript -->
+		
+	
+		<script src="js/libs/modernizr-2.0.6.min.js"></script>	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+		
+		<script type="text/javascript" src="http://use.typekit.com/yey2zgp.js"></script> 
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
+  <script type="text/javascript">L_PREFER_CANVAS = true;</script>
+		
+		<script src="js/libs/popcorn-complete.min.js"></script>
+		
+		<script src="js/plugins.js"></script>
+	 
+	 	<script type="text/javascript">
+	 	
+		//<![CDATA[
+		$(document).ready(function(){
+			$("#pop-audio").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "towanda11-20.mp3",
+						oga: "towanda11-20.ogg"
+					}).jPlayer("pause");
+				},
+				ended: function (event) {
+					$(this).jPlayer("pause");
+				},
+				swfPath: "js",
+				supplied: "oga, mp3",
+				cssSelectorAncestor: "",
+				cssSelector: {
+					play: ".wl-play",
+					pause: ".wl-pause",
+					stop: "#stop",
+					seekBar: ".jp-seek-bar",
+					playBar: ".jp-play-bar",
+					currentTime: "#currentTime",
+					duration: "#duration"
+				}
+			});
+			
+			//jplayer events
+			
+			$("#title-button").click( function() {
+				$("#pop-audio").jPlayer("play", 0);
+			});
+			
+			$('#bh').click(function() {
+				$.smoothScroll({
+					speed: 800,
+					scrollTarget: '#titlecard',
+					afterScroll: function() {$("#pop-audio").jPlayer("pause", 0);}
+				});
+				return false;
+			});
+
+			$("#c1").click( function() {
+				//$("#pop-audio").jPlayer("play", 22);
+				$("#pop-audio").jPlayer("play", 308);
+			});
+			
+			
+			$("#c2").click( function() {
+				$("#pop-audio").jPlayer("play", 71);
+			});
+			
+			$("#c3").click( function() {
+				$("#pop-audio").jPlayer("play", 271);
+			});
+			
+			$("#c4").click( function() {
+				$("#pop-audio").jPlayer("play", 413);
+			});
+			
+			$("#c5").click( function() {
+				$("#pop-audio").jPlayer("play", 442);
+			});
+			
+			
+			
+			//chapter navigation
+			/* $('#discovery').click(function() {
+				$.smoothScroll({
+					scrollTarget: '#chapter1',
+					afterScroll: function() {$("#pop-audio").jPlayer("play", 0);}
+				});
+				return false;
+			});*/
+			
+
+		});
+		//]]>
+		</script>
+	<!-- End JavaScript -->
+	
+	<script src="js/text.js"></script>
+
+	<style type="text/css">
+
+/************* global styles *************/
+
+body {background-color: #111;}
+
+h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
+
+/* Data Icon */
+
+/* @font-face {
+    font-family: 'entypo';
+    src: url('font/entypo.eot');
+    src: url('font/entypo.eot?#iefix') format('embedded-opentype'),
+         url('font/entypo.woff') format('woff'),
+         url('font/entypo.ttf') format('truetype'),
+         url('font/entypo.svg#entypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'fontello';
+    src: url('font/fontello.eot');
+    src: url('font/fontello.eot?#iefix') format('embedded-opentype'),
+         url('font/fontello.woff') format('woff'),
+         url('font/fontello.ttf') format('truetype'),
+         url('font/fontello.svg#fontelloRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: fontello; /* BYO icon font, mapped smartly */
+  content: attr(data-icon);
+  speak: none; /* Not to be trusted, but hey. */
+}
+
+.icon-alone {
+  display: inline-block; /* Chrome 19 was weird with clickability without this */
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/*#title-play [data-icon]:before { 
+font-family: fontello;
+content: '\2389';
+content: attr(data-icon);
+speak: none; 
+}*/
+
+/*animation */
+
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	-ms-animation-duration: 4s;
+	-o-animation-duration: 4s;
+	animation-duration: 4s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-o-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	-moz-animation-name: fadeOut;
+	-o-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+/************* HEADER ******************/
+
+		#global-header { 
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 1000;
+			
+		  }
+		  
+		#global-header .penn { 
+		background: url(img/nav-bg.png) repeat-x; 
+			height: 47px; 
+			margin-bottom: 20px; 
+			-webkit-font-smoothing: antialiased;
+		}
+		
+		
+		#global-header h2 a { 
+		    display: block; 
+		    margin: 0 0 0 50px;
+		    background: url(img/si-logo.png) no-repeat; 
+		    text-indent: -999em; 
+		    width: 192px; 
+		    height: 71px; 
+		    z-index: 500;
+		    position: absolute;
+		    top: -10px;
+		    left: -15px;
+		}
+		
+		#global-header h3, header h2 { margin: 0; }
+
+		#global-header h3 a, header h3 a:hover, header h3 a:visited { 
+		    display: block; 
+		    float: left;  
+		    font: 400 24px/50px proxima-nova,sans-serif;
+		    color: #fff; 
+		    text-decoration: none; 
+		    padding: 0 15px 0 0; 
+		    margin: 0 0 0 235px; 
+		}
+				
+/**** audio navigation ****/
+
+.panel-player {width: 90%;}
+
+.jp-seek-bar {
+display: block;
+background-color: blue;
+height: 25px;
+}
+
+.jp-play-bar {
+display: block;
+background-color: #000;
+height: 25px;
+}
+
+.panel-chapters{
+	margin: 20px 0 70px 100px;
+	padding: 0;
+}
+.panel-chapters li {
+	list-style-type: none;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.ab-nav {
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width: 100%;
+	background-color: #333;  
+	z-index: 200; 
+	opacity: 0.7;
+	}
+
+.ab-nav:hover {opacity: .9; }
+
+.ab-nav a {color: #d3d3d3; display: block; line-height: 1;}
+
+.panel-player {
+position: absolute;
+top: -20px;
+left: 15px;
+}
+
+.ab-nav .wl-play {
+font-size: 70px;
+
+}
+
+.ab-nav .wl-pause {
+font-size: 60px;
+margin-top: 5px;
+}
+
+.ab-nav .wl-play:hover {
+color: #fff;
+}
+
+.active {
+	background-color: blue;
+}
+
+/* panel */
+
+.panel {
+	position: relative;
+	background-color: #111;
+	box-shadow: 2px -1px 20px #000;
+	color: #ccc;
+	overflow: hidden;
+	/*margin-top: -20px;*/
+}
+
+/**** title card ****/
+
+#wl-intro {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background-color: #eee;
+	z-index: 100;
+	padding-top: 200px;
+}
+
+#wl-intro h2 {
+font-size: 70px;
+width: 600px;
+line-height: 1;
+margin: 0 50px;
+font-weight: 300;
+text-transform: uppercase;
+} 
+
+#wl-intro p {
+font-size: 20px;
+width: 600px;
+line-height: 1.3;
+margin: 20px 50px;
+font-weight: 200;
+}
+
+#titlecard {
+	background: #111 url(img/flower-bridge.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	position: relative;
+	height: 1000px;
+	color: #333;
+}
+
+#title-inner {
+	width: 700px; 
+	margin: 0 auto; 
+	padding-top: 130px;
+	position: relative;
+	z-index: 20;
+	}
+
+#title-inner h1 {
+	font-size: 90px;
+	margin: 0 0 10px 0;
+	line-height: .8;
+	color: #333;
+	text-shadow: 1px 2px 3px #666169;
+	font-family: proxima-nova, helvetica, arial, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#title-inner h3 {
+	font-size: 24px;
+	margin: 20px 45px 20px 10px;
+color: #333;
+font-family: proxima-nova,helvetica, arial, sans-serif;
+line-height: 1.3;
+font-weight: 400;
+text-shadow: 1px 2px 3px #666169;
+text-transform: uppercase;
+}
+
+#title-play {
+	font-size: 50px;
+	margin: 0 0 0 8px;
+color: #222;
+font-family: proxima-nova,helvetica, arial, sans-serif;
+line-height: 1;
+font-weight: 600;
+text-shadow: 1px 2px 13px #ddd;
+text-transform: uppercase;
+}
+
+#title-inner a:hover h1{
+	color: #000;
+	}
+
+#title-inner a:hover #title-play{
+	/*color: #8496b3;*/
+	color: #000;
+	}
+
+/*** Chapter 1 ***/
+
+#chapter1 {
+	background: #111 url(img/nostalgia1d.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	position: relative;
+	height: 750px;
+	color: #ddd;
+}
+
+#c1s1 {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.panel h2 {
+	font-size: 60px;
+	color: #fff;
+	padding-top: 100px;
+	width: 800px;
+	margin: 0 auto;
+	line-height: 1.3;
+	font-family: proxima-nova,helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-weight:300;
+	text-shadow: 3px 3px 7px #444;
+	
+}
+
+/*segments */
+
+.segment {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 750px;
+	z-index: 10;
+}
+
+#s2 {
+	background: #111 url(img/chief-photo.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s3 {
+	background: #111 url(img/shale-well1a.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s3a {
+	background: #111 url(img/shale-well2.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s3b {
+	/*map*/
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+	min-height: 1000px;
+	opacity: .7;
+	background: #111 url(img/bradford-map2.png);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s3c {
+	/*map*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 12;
+}
+
+#s3c p {
+	width: 700px;
+	color: #333;
+	margin: 0 auto;
+	font-size: 40px;
+	margin-top: 150px;
+}
+
+
+#s4 {
+	background: #111 url(img/old-towanda.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s5 {
+	background: #111 url(img/mailboxes.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s6 {
+	background: #111 url(img/barbara-karen.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s7 {
+	background: #111 url(img/coffee-guys1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s8 {
+	background: #111 url(img/coffee-guys3.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s9 {
+	background: #111 url(img/musician.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s10 {
+	background: #111 url(img/restaurant-wide-shot.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s11 {
+	background: #111 url(img/courthouse.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s11a {
+	background: #111 url(img/truck-flag.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s12 {
+	background: #111 url(img/menu.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s13 {
+	background: #111 url(img/jewelery1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s14 {
+	background: #111 url(img/jewelery3.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s15 {
+	background: #111 url(img/shoe-store1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s16 {
+	background: #111 url(img/shoe-store-boots.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s17 {
+	/*holy smokes*/
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+}
+
+#s18 {
+	background: #111 url(img/sales-tax-business.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s18a {
+	/*sales data overlay*/
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+}
+
+#s19 {
+	background: #111 url(img/chesapeake.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s20 {
+	background: #111 url(img/gtp-manufacturing.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s20a {
+	background: #111 url(img/gtp-factory1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s20b {
+	background: #111 url(img/dupont.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s21 {
+	background: #111 url(img/chief-at-station.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s22 {
+	background: #111 url(img/welcome-towanda.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s23 {
+	/*police incidents in Towanda increased by 27% between 2009 and 2011 */
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+}
+
+#s24 {
+	background: #111 url(img/deer-head.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s25 {
+	/*I'm pretty sure you can't shoot them in Texas either*/
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+}
+
+#s26 {
+	background: #111 url(img/rent-sign.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s26a {
+	/*data overlay*/
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+	z-index: 11;
+}
+
+#s27 {
+	background: #111 url(img/classified.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s28 {
+	background: #111 url(img/joe-benjamin.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s29 {
+	background: #111 url(img/grace1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s30 {
+	background: #111 url(img/grace2.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s31 {
+	background: #111 url(img/taco-food.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s32 {
+	background: #111 url(img/taco.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s33 {
+	background: #111 url(img/truck1.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s34 {
+	background: #111 url(img/truck2.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s35 {
+	background: #111 url(img/truck3.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s36 {
+	background: #111 url(img/truck4.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s37 {
+	background: #111 url(img/old-man.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s38 {
+	background: #111 url(img/town-square-clock.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s39 {
+	background: #111 url(img/restaurant-outside.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s40 {
+	background: #111 url(img/fnl.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+#s41 {
+	background: #111 url(img/foggy-highway.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+/**** learn ****/
+
+#learn {
+	background: #fff;
+	position: relative;
+	 margin-top: -50px;
+	 padding-top: 100px;
+	 border-top: 5px solid #000;
+	
+}
+
+/* footer */
+
+footer { color: #333; margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; 
+	
+}
+
+footer h2 { font-size: 16px; font-weight: 300; color: #fff; border-bottom: 4px solid #ccc; text-transform: uppercase; margin-bottom: 9px;  }
+		
+footer p, footer li, footer dl { font: 14px proxima-nova,"Helvetica Neue",arial,sans-serif; }
+		
+footer a, footer a:hover { font-weight: bold; color: #999; }
+				
+footer .boilerplate { font-size: 12px; color: #666;}
+
+footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
+		footer a.nprlogo { text-indent: -999em; text-align: left; }
+
+.nprlogo { display: inline-block; text-indent: 100%; overflow: hidden; width: 51px; height: 17px; background: url(http://si-fracking.s3.amazonaws.com/img/npr-transparent.png) no-repeat; margin: 0 0 0 3px; }
+
+/** carousel **/
+
+.carousel {
+	width: 100%;
+	position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel .carousel-item {
+	display: none;
+}
+.carousel .carousel-active {
+	display: block;
+}
+
+.carousel .carousel-nav:nth-child(2) {
+	display: none;
+}
+
+/* notebook slideshow */
+
+#notebooks .carousel {
+ 	position: relative;
+}
+
+#notebooks .carousel p {
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	font-family: helvetica, arial, sans-serif;
+	color: #555;
+	font-size: 12px;
+	
+}
+
+.carousel-nav {visibility: hidden;}
+
+.panel:hover .carousel-nav {visibility: visible;}
+
+.carousel-nav a {
+position: absolute;
+font-size: 180px;
+top: 400px;
+color: #fff;
+line-height: .1;
+z-index: 30;
+text-shadow: 1px 1px 3px #000;
+opacity: .8;
+}
+
+.carousel-nav a:hover {
+color: #931313;
+}
+
+.carousel-nav .prev {
+left: 10px;
+}
+
+.carousel-nav .next {
+right: 10px;
+}
+
+
+/* #Media Queries
+================================================== */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		body {border-top: 3px solid red; padding-top: 23px;}
+		
+		.panel h2 {
+			font-size: 50px;
+			width: 700px;
+		}
+		
+		#global-header, #titlecard {display: none;}
+		
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+		body {border-top: 3px solid green;  padding-top: 23px;}
+		
+		#titlecard {
+			height: 600px;
+		}
+		
+		.panel h2 {
+			font-size: 40px;
+			width: 478px;
+		}
+		
+		#chapter1 {
+			height: 600px;
+		}
+		
+		
+		
+		#title-inner h3 {
+			font-size: 14px;
+			margin: 10px 0;
+		}
+		
+		#title-play {
+			font-size: 24px;
+		}
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	
+		body {border-top: 3px solid blue;  padding-top: 23px;}
+		
+		
+		
+		#title-inner {
+			width: 300px;
+		}
+		
+		#title-inner h1 {
+			font-size: 40px;
+		}
+		
+		
+		#chapter1 h2 {
+			font-size: 24px;
+		}
+		
+		
+	}
+	</style>
+</head>
+<body id="top">
+<header id="global-header">
+	<nav>
+		<div class="penn">
+			<h2><a href="http://stateimpact.npr.org">StateImpact</a></h2>
+			<h3><a href="http://stateimpact.npr.org/pennsylvania/">Pennsylvania</a></h3>
+		</div><!-- /.penn -->
+	</nav>			
+</header> <!-- global-header -->
+
+<!-- ========================================= TITLE =================================== -->
+<div  id="titlecard" class="panel">		
+		<div id="title-inner" class="animated fadeIn"> 
+		 <a id="title-button" href="javascript:;">
+			 <h1>Boom Town</h1>
+			 
+			 <h3>A Pennsylvania town takes stock of its transformation, five years after natural gas drilling came to town.</h3>
+			 
+			 <p id="title-play">
+			 	Play
+			 	<span aria-hidden="true" data-icon="&#x25B6;"></span>
+			 </p>
+		</a>
+		</div><!--/title-inner-->	
+
+
+</div> <!-- titlecard -->
+
+<!-- !chapter1 -->
+<div id="chapter1" class="panel">
+	<div class="ab-nav">
+	
+	<div class="panel-player">
+	<p>
+	<a href="javascript:;" class="wl-play icon-alone">
+		<span aria-hidden="true" data-icon="&#x25B6;"></span>
+		<span class="screen-reader-text">Play</span>
+	</a>
+
+	<a href="javascript:;" class="wl-pause">
+		<span aria-hidden="true" data-icon="&#x2389;"></span>
+		<span class="screen-reader-text">Pause</span>
+	</a>
+	
+	<b>
+	<span id="duration"></span>
+	</b>
+	</p>
+	
+		<div class="jp-seek-bar">
+			<div class="jp-play-bar"></div>
+		</div><!-- /jp-seek-bar -->
+	</div>
+	
+	<ul class="panel-chapters">
+		<li id="boom-home">
+			<a href="javascript:;" id="bh">Boom Town</a>
+		</li>
+	
+		<li>
+			<a href="javascript:;" id="c1">
+				Norman Rockwell	
+				</a>
+		</li>
+		<li>
+			<a href="javascript:;" id="c2">
+				Economy
+				</a>
+		</li>
+		<li>
+			<a href="javascript:;" id="c3">
+				Civic Issues
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;" id="c4">
+				Traffic
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;" id="c5">
+				Slowdown
+			</a>
+		</li>
+		
+		
+		
+	</ul>
+	</div><!-- /ab-nav -->
+	
+	
+
+</div><!-- /chapter1 -->
+
+<div id="chapter2" class="panel">
+	
+		<div id="notebooks">
+			<div class="carousel">
+				<div id="first-note" data-before="am.html">
+					<img src="img/restaurant1.jpg">
+				</div>		
+			</div><!-- /carousel -->
+	    </div><!-- /notebooks -->
+
+</div><!-- /chapter2 -->
+
+<!-- !learn -->
+<div id="learn">
+
+	<div class="container">
+		<div class="eleven columns">
+			<h2>a little bit more</h2>
+		</div><!--/eleven-->
+	</div><!-- /container -->
+	
+	
+	<footer id="footer" class="container">
+		<div class="boilerplate sixteen columns">
+			<p class="partnership">A reporting project of local public media and <a class="nprlogo" href="http://npr.org" title="Visit npr.org">NPR</a></p> 
+			<p class="copyright">&copy; 2011 NPR | <a href="http://www.npr.org/about/termsofuse.html">Terms Of Use</a> | <a href="http://www.npr.org/about/privacypolicy.html">Privacy Policy</a></p> 
+	</footer><!-- /footer -->
+	
+	
+</div><!-- /learn -->
+
+<!-- audio player --><div id="pop-audio" class="jp-jplayer"></div><!-- /audio player -->
+
+<!--[if lt IE 8 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+</body>
+</html>
