@@ -160,11 +160,11 @@ svg:not(:root) { overflow: hidden; }
 		max-width: 100%;
 		height: auto; }
 
-/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ 
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-*/ 
+ 
 
 /* #Media Queries
 ================================================== */

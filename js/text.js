@@ -19,26 +19,25 @@ pop.webpage({
 pop.text({
 start: 1,
 end: 19,
-text:'<div id="wl-intro" class="animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
-target:'titlecard'
+text:'<div id="boom-intro" class="animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
+target:'chapter1'
 });
 
-
-
-//pause
-/*pop.code({
-	start: 10,
-	end: 11,
-	onStart: function( options ) {         
-		$("#pop-audio").jPlayer("pause", 2);
+pop.code({
+	start: 15,
+	end: 17,
+	onStart: function( options ) {  
+		$("#boom-intro").removeClass("fadeIn");
+	},
+	onEnd: function( options ) {
+		$("#boom-intro").addClass("fadeOut");
 	}
-	
-});*/
+});
 
 
 /////////Part1
 pop.code({
-	start: 17,
+	start: 1,
 	end: 29,
 	onStart: function( options ) {  
 		$.smoothScroll({
@@ -66,7 +65,7 @@ target:'chapter1'
 pop.text({
 start: 36,
 end: 46,
-text:'<div id="s2" class="segment"></div>',
+text:'<div id="s2" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -75,7 +74,7 @@ target:'chapter1'
 pop.text({
 start: 46,
 end: 53,
-text:'<div id="s3" class="segment"></div>',
+text:'<div id="s3" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -84,7 +83,7 @@ target:'chapter1'
 pop.text({
 start: 53,
 end: 71,
-text:'<div id="s3a" class="segment"></div>',
+text:'<div id="s3a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -111,7 +110,7 @@ target:'chapter1'
 pop.text({
 start: 71,
 end: 87,
-text:'<div id="s4" class="segment"></div>',
+text:'<div id="s4" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -120,7 +119,7 @@ target:'chapter1'
 pop.text({
 start: 87,
 end: 97,
-text:'<div id="s5" class="segment"></div>',
+text:'<div id="s5" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -130,7 +129,7 @@ target:'chapter1'
 pop.text({
 start: 97,
 end: 107,
-text:'<div id="s6" class="segment"></div>',
+text:'<div id="s6" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -139,7 +138,7 @@ target:'chapter1'
 pop.text({
 start: 107,
 end: 112,
-text:'<div id="s7" class="segment"></div>',
+text:'<div id="s7" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -148,7 +147,7 @@ target:'chapter1'
 pop.text({
 start: 112,
 end: 117,
-text:'<div id="s8" class="segment"></div>',
+text:'<div id="s8" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -157,7 +156,7 @@ target:'chapter1'
 pop.text({
 start: 117,
 end: 125,
-text:'<div id="s9" class="segment"></div>',
+text:'<div id="s9" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -166,7 +165,7 @@ target:'chapter1'
 pop.text({
 start: 125,
 end: 138,
-text:'<div id="s10" class="segment"></div>',
+text:'<div id="s10" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -175,7 +174,7 @@ target:'chapter1'
 pop.text({
 start: 138,
 end: 147,
-text:'<div id="s11" class="segment"></div>',
+text:'<div id="s11" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -184,7 +183,7 @@ target:'chapter1'
 pop.text({
 start: 147,
 end: 161,
-text:'<div id="s11a" class="segment"></div>',
+text:'<div id="s11a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -192,7 +191,7 @@ target:'chapter1'
 pop.text({
 start: 161,
 end: 172,
-text:'<div id="s12"  class="segment"></div>',
+text:'<div id="s12"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -200,7 +199,7 @@ target:'chapter1'
 pop.text({
 start: 172,
 end: 184,
-text:'<div id="s13"  class="segment"></div>',
+text:'<div id="s13"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -210,7 +209,7 @@ target:'chapter1'
 pop.text({
 start: 178,
 end: 184,
-text:'<div id="s14"  class="segment"></div>',
+text:'<div id="s14"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });*/
 
@@ -218,7 +217,7 @@ target:'chapter1'
 pop.text({
 start: 184,
 end: 194,
-text:'<div id="s15"  class="segment"></div>',
+text:'<div id="s15"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -226,7 +225,7 @@ target:'chapter1'
 pop.text({
 start: 194,
 end: 213,
-text:'<div id="s16"  class="segment"></div>',
+text:'<div id="s16"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -242,7 +241,7 @@ target:'chapter1'
 pop.text({
 start: 213,
 end: 225,
-text:'<div id="s18"  class="segment"></div>',
+text:'<div id="s18"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -258,7 +257,7 @@ target:'chapter1'
 pop.text({
 start: 225,
 end: 231,
-text:'<div id="s19"  class="segment"></div>',
+text:'<div id="s19"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -266,7 +265,7 @@ target:'chapter1'
 pop.text({
 start: 231,
 end: 240,
-text:'<div id="s20"  class="segment"></div>',
+text:'<div id="s20"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -274,7 +273,7 @@ target:'chapter1'
 pop.text({
 start: 240,
 end: 248,
-text:'<div id="s20a"  class="segment"></div>',
+text:'<div id="s20a"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -282,7 +281,7 @@ target:'chapter1'
 pop.text({
 start: 248,
 end: 253,
-text:'<div id="s20b"  class="segment"></div>',
+text:'<div id="s20b"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -290,7 +289,7 @@ target:'chapter1'
 pop.text({
 start: 253,
 end: 270,
-text:'<div id="s21"  class="segment"></div>',
+text:'<div id="s21"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -298,7 +297,7 @@ target:'chapter1'
 pop.text({
 start: 270,
 end: 288,
-text:'<div id="s22"  class="segment"></div>',
+text:'<div id="s22"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -314,7 +313,7 @@ target:'chapter1'
 pop.text({
 start: 288,
 end: 308,
-text:'<div id="s24" class="segment"></div>',
+text:'<div id="s24" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -330,7 +329,7 @@ target:'chapter1'
 pop.text({
 start: 308,
 end: 314,
-text:'<div id="s26" class="segment"></div>',
+text:'<div id="s26" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -346,7 +345,7 @@ target:'chapter1'
 pop.text({
 start: 314,
 end: 340,
-text:'<div id="s27" class="segment"></div>',
+text:'<div id="s27" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -354,7 +353,7 @@ target:'chapter1'
 pop.text({
 start: 340,
 end: 359,
-text:'<div id="s28" class="segment"></div>',
+text:'<div id="s28" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -362,7 +361,7 @@ target:'chapter1'
 pop.text({
 start: 359,
 end: 369,
-text:'<div id="s29" class="segment"></div>',
+text:'<div id="s29" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -370,7 +369,7 @@ target:'chapter1'
 pop.text({
 start: 369,
 end: 385,
-text:'<div id="s30" class="segment"></div>',
+text:'<div id="s30" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -378,7 +377,7 @@ target:'chapter1'
 pop.text({
 start: 385,
 end: 401,
-text:'<div id="s31" class="segment"></div>',
+text:'<div id="s31" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -386,7 +385,7 @@ target:'chapter1'
 pop.text({
 start: 401,
 end: 410,
-text:'<div id="s32" class="segment"></div>',
+text:'<div id="s32" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -394,7 +393,7 @@ target:'chapter1'
 pop.text({
 start: 410,
 end: 430,
-text:'<div id="s33" class="segment"></div>',
+text:'<div id="s33" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -402,7 +401,7 @@ target:'chapter1'
 pop.text({
 start: 430,
 end: 433,
-text:'<div id="s34" class="segment"></div>',
+text:'<div id="s34" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -410,7 +409,7 @@ target:'chapter1'
 pop.text({
 start: 433,
 end: 435,
-text:'<div id="s35" class="segment"></div>',
+text:'<div id="s35" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -418,7 +417,7 @@ target:'chapter1'
 pop.text({
 start: 435,
 end: 440,
-text:'<div id="s36" class="segment"></div>',
+text:'<div id="s36" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -426,7 +425,7 @@ target:'chapter1'
 pop.text({
 start: 440,
 end: 453,
-text:'<div id="s37" class="segment"></div>',
+text:'<div id="s37" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -434,7 +433,7 @@ target:'chapter1'
 pop.text({
 start: 453,
 end: 466,
-text:'<div id="s38" class="segment"></div>',
+text:'<div id="s38" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -442,7 +441,7 @@ target:'chapter1'
 pop.text({
 start: 466,
 end: 472,
-text:'<div id="s39" class="segment"></div>',
+text:'<div id="s39" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -450,7 +449,7 @@ target:'chapter1'
 pop.text({
 start: 472,
 end: 486,
-text:'<div id="s40" class="segment"></div>',
+text:'<div id="s40" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -458,7 +457,7 @@ target:'chapter1'
 pop.text({
 start: 486,
 /*end: 495,*/
-text:'<div id="s41" class="segment"></div>',
+text:'<div id="s41" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
