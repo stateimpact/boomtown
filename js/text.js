@@ -3,62 +3,51 @@ var pop = Popcorn( '#jp_audio_0');
 
 /////////////// !CHAPTER 1
 
-
-
-/*
-pop.webpage({
-        id: "webpages-f",
-        start: 1,
-        end: 9,
-        src: "http://stateimpact.npr.org",
-        target: "webpagediv"
-      });
-*/
+pop.code({
+	start: 1,
+	onStart: function( options ) {  
+		$.smoothScroll({
+			speed: 800,
+			scrollTarget: '#chapter1'
+			});
+	}
+});
 
 //intro
 pop.text({
 start: 1,
-end: 19,
-text:'<div id="boom-intro" class="animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
+end: 18,
+text:'<div id="boom-intro" class="segment animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
 target:'chapter1'
 });
 
+//remove chapter1 background image
 pop.code({
-	start: 15,
-	end: 17,
+	start: 17,
+	end: 495,
 	onStart: function( options ) {  
-		$("#boom-intro").removeClass("fadeIn");
+		$("#chapter1").removeClass("starter");
 	},
 	onEnd: function( options ) {
-		$("#boom-intro").addClass("fadeOut");
+		$("#chapter1").addClass("starter");
 	}
 });
 
-
-/////////Part1
-pop.code({
-	start: 1,
-	end: 29,
-	onStart: function( options ) {  
-		$.smoothScroll({
-			speed: 800,
-			scrollTarget: '#chapter1',
-			afterScroll: function() {$("#c1").addClass("active");}
-			});
-			return false;
-	},
-	onEnd: function( options ) {$("#c1").removeClass("active");}
-});
-
+//s1
 
 pop.text({
-start: 21,
+start: 15,
 end: 40,
-text:'<div id="c1s1"><h2>Towanda was like a Norman Rockwell picture as late as ten years ago.</h2></div>',
+text:'<div id="s1" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-
+pop.text({
+start: 15,
+end: 40,
+text:'<div id="s1a"><h2>Towanda was like a Norman Rockwell picture as late as like ten years ago.</h2></div>',
+target:'chapter1'
+});
 
 //s2
 
@@ -87,24 +76,43 @@ text:'<div id="s3a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s3b-- map
-/*
+//maps
+
+pop.text({
+start: 56,
+end: 58,
+text:'<div class="map"><img src="img/map8.png" alt="2008"><p>2008: Drilled wells in Bradford County.</p></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 58,
+end: 60,
+text:'<div class="map"><img src="img/map9.png" alt="2009"><p>2009: Drilled wells in Bradford County.</p></div>',
+target:'chapter1'
+});
+
 pop.text({
 start: 60,
-end: 73,
-text:'<div id="s3b"></div>',
+end: 62,
+text:'<div class="map"><img src="img/map10.png" alt="2010"><p>2010: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
-*/
-
-//s3c
 
 pop.text({
-start: 61,
-end: 77,
-text:'<div id="s3c" class="animated fadeIn"><p>There are xxxx drilled wells in Bradford County</div>',
+start: 62,
+end: 64,
+text:'<div class="map"><img src="img/map11.png" alt="2011"><p>2011: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
+
+pop.text({
+start: 64,
+end: 71,
+text:'<div class="map"><img src="img/map12.png" alt="2012"><p>2012: Drilled wells in Bradford County.</p></div>',
+target:'chapter1'
+});
+
 
 //s4
 
@@ -233,7 +241,7 @@ target:'chapter1'
 //s17
 pop.text({
 start: 210,
-end: 217,
+end: 213,
 text:'<div id="s17"><h2>Holy smokes, we better get some pull on boots.</h2></div>',
 target:'chapter1'
 });
@@ -249,7 +257,7 @@ target:'chapter1'
 //s18a
 pop.text({
 start: 213,
-end: 229,
+end: 225,
 text:'<div id="s18a"><h2>Sales Tax collected in Bradford County jumped 61% over 4 years.</h2></div>',
 target:'chapter1'
 });

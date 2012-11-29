@@ -41,6 +41,8 @@
 		<script src="js/libs/popcorn-complete.min.js"></script>
 		
 		<script src="js/plugins.js"></script>
+		
+		
 	 
 	 	<script type="text/javascript">
 	 	
@@ -78,7 +80,7 @@
 			$('#bh').click(function() {
 				$.smoothScroll({
 					speed: 800,
-					scrollTarget: '#titlecard',
+					scrollTarget: '#chapter1',
 					afterScroll: function() {$("#pop-audio").jPlayer("pause", 0);}
 				});
 				return false;
@@ -88,35 +90,6 @@
 				//$("#pop-audio").jPlayer("play", 22);
 				$("#pop-audio").jPlayer("play", 308);
 			});
-			
-			
-			$("#c2").click( function() {
-				$("#pop-audio").jPlayer("play", 71);
-			});
-			
-			$("#c3").click( function() {
-				$("#pop-audio").jPlayer("play", 271);
-			});
-			
-			$("#c4").click( function() {
-				$("#pop-audio").jPlayer("play", 413);
-			});
-			
-			$("#c5").click( function() {
-				$("#pop-audio").jPlayer("play", 442);
-			});
-			
-			
-			
-			//chapter navigation
-			/* $('#discovery').click(function() {
-				$.smoothScroll({
-					scrollTarget: '#chapter1',
-					afterScroll: function() {$("#pop-audio").jPlayer("play", 0);}
-				});
-				return false;
-			});*/
-			
 
 		});
 		//]]>
@@ -124,10 +97,8 @@
 	<!-- End JavaScript -->
 	
 	<script src="js/text.js"></script>
-	
-	<link rel="stylesheet" href="css/socialcount.css">
-	<link rel="stylesheet" href="css/socialcount-icons.css">
-	<script src="js/socialcount.js"></script>
+
+<link rel="stylesheet" href="css/animate.css">
 
 	<style type="text/css">
 
@@ -141,17 +112,6 @@ font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
 h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
 
 /* Data Icon */
-
-/* @font-face {
-    font-family: 'entypo';
-    src: url('font/entypo.eot');
-    src: url('font/entypo.eot?#iefix') format('embedded-opentype'),
-         url('font/entypo.woff') format('woff'),
-         url('font/entypo.ttf') format('truetype'),
-         url('font/entypo.svg#entypoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}*/
 
 @font-face {
     font-family: 'fontello';
@@ -187,82 +147,15 @@ content: attr(data-icon);
 speak: none; 
 }*/
 
-/*animation */
-
-.animated {
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-ms-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-duration: 4s;
-	-moz-animation-duration: 4s;
-	-ms-animation-duration: 4s;
-	-o-animation-duration: 4s;
-	animation-duration: 4s;
-}
-
-@-webkit-keyframes fadeIn {
-	0% {opacity: 0;}	
-	100% {opacity: 1;}
-}
-
-@-moz-keyframes fadeIn {
-	0% {opacity: 0;}	
-	100% {opacity: 1;}
-}
-
-@-o-keyframes fadeIn {
-	0% {opacity: 0;}	
-	100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-	0% {opacity: 0;}	
-	100% {opacity: 1;}
-}
-
-.fadeIn {
-	-webkit-animation-name: fadeIn;
-	-moz-animation-name: fadeIn;
-	-o-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-@-webkit-keyframes fadeOut {
-	0% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@-moz-keyframes fadeOut {
-	0% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@-o-keyframes fadeOut {
-	0% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@keyframes fadeOut {
-	0% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-.fadeOut {
-	-webkit-animation-name: fadeOut;
-	-moz-animation-name: fadeOut;
-	-o-animation-name: fadeOut;
-	animation-name: fadeOut;
-}
-
 /************* HEADER ******************/
 
 		#global-header { 
+			/*top: 10px;*/
 			top: 0;
 			left: 0;
 			position: absolute;
 			width: 100%;
-			z-index: 1000;
+			z-index: 20;
 			
 		  }
 		  
@@ -323,6 +216,7 @@ margin: 0;
 	position: relative;
 	height: 1000px;
 	color: #333;
+	z-index: 12;
 }
 
 #title-inner {
@@ -330,7 +224,12 @@ margin: 0;
 	margin: 0 auto; 
 	padding-top: 130px;
 	position: relative;
-	z-index: 20;
+	z-index: 13;
+	-webkit-animation-duration: 10s;
+	-moz-animation-duration: 10s;
+	-ms-animation-duration: 10s;
+	-o-animation-duration: 10s;
+	animation-duration: 10s;
 	}
 
 #title-inner h1 {
@@ -543,63 +442,24 @@ color: #ddd;
 	font-size: 11px;
 }
 
-/**** introduction ****/
-
-#boom-intro {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 700px;
-	background-color: #000;
-	z-index: 100;
-}
-
-#boom-intro h2 {
-font-size: 70px;
-width: 600px;
-line-height: 1;
-margin: 0 50px;
-font-weight: 300;
-text-transform: uppercase;
-} 
-
-#boom-intro p {
-font-size: 20px;
-width: 600px;
-line-height: 1.3;
-margin: 20px 50px;
-font-weight: 200;
-}
-
-
-
 /*** Chapter 1 ***/
 
 #chapter1 {
+	position: relative;
+	height: 800px;
+}
+
+.starter {
 	background: #111 url(img/nostalgia1d.jpg);
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
-	position: relative;
-	height: 750px;
-	color: #ddd;
-}
+	}
 
-#c1s1 {
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 90%;
-	height: 560px;
-	z-index: 10;
-	background-color: #333;
-	opacity: .6;
-	padding: 5%;
-}
+
 
 #chapter1 h2 {
-	font-size: 90px;
+	font-size: 80px;
 	color: #fff;
 	line-height: 1;
 	font-family: proxima-nova,helvetica, arial, sans-serif;
@@ -616,8 +476,56 @@ text-shadow: 2px 2px 1px #000;
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 700px;
+	height: 800px;
 	z-index: 10;
+}
+
+
+/**** introduction ****/
+
+#boom-intro {
+	background-color: #000;
+	-webkit-animation-duration: 10s;
+	-moz-animation-duration: 10s;
+	-ms-animation-duration: 10s;
+	-o-animation-duration: 10s;
+	animation-duration: 10s;
+}
+
+#boom-intro h2 {
+font-size: 70px;
+width: 50%;
+line-height: 1;
+margin: 0 50px;
+font-weight: 300;
+text-transform: uppercase;
+} 
+
+#boom-intro p {
+font-size: 20px;
+width: 50%;
+line-height: 1.3;
+margin: 20px 50px;
+font-weight: 200;
+}
+
+#s1 {
+	background: #111 url(img/nostalgia1d.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	}
+	
+#s1a {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 90%;
+	height: 800px;
+	z-index: 10;
+	background-color: #333;
+	opacity: .6;
+	padding: 5%;
 }
 
 #s2 {
@@ -641,36 +549,30 @@ text-shadow: 2px 2px 1px #000;
 	background-size:cover;
 }
 
-#s3b {
-	/*map*/
+.map {
 	position: absolute;
 	top:0;
 	left: 0;
 	width: 100%;
-	z-index: 11;
-	min-height: 1000px;
-	opacity: .7;
-	background: #111 url(img/bradford-map2.png);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-}
-
-#s3c {
-	/*map*/
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+	padding-top: 100px;
+	height: 600px;
 	z-index: 12;
+	background-color: transparent;
+  background-color: rgba(000, 000, 000, 0.8);
 }
 
-#s3c p {
-	width: 700px;
-	color: #333;
+.map img{
+	width: 600px;
 	margin: 0 auto;
-	font-size: 40px;
-	margin-top: 150px;
+	color: #fff;
+	display: block;
+	border: 5px solid #fff
+}
+
+.map p {
+	width: 610px;
+	margin: 10px auto;
+	font-size: 22px;
 }
 
 
@@ -993,6 +895,7 @@ text-shadow: 2px 2px 1px #000;
 	 margin-top: -50px;
 	 padding-top: 100px;
 	 border-top: 5px solid #000;
+	 z-index: 12;
 	
 }
 
@@ -1083,58 +986,80 @@ right: 10px;
 }
 
 
+
 /* #Media Queries
 ================================================== */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		
-		body {border-top: 3px solid red; padding-top: 23px;}
+		body {border-top: 3px solid red;}
 		
-		.panel h2 {
-			font-size: 50px;
-			width: 700px;
-		}
 		
-		#global-header, #titlecard {display: none;}
+
+		.jp-seek-bar p {display: none;}
+
+		.jp-seek-bar {width: 78% !important;}
+		
+		/*segments*/
+		
+		#chapter1, .segment {height: 620px;}
+		
 		
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		
-		body {border-top: 3px solid green;  padding-top: 23px;}
+		body {border-top: 3px solid green;}
+
+		/*global header*/
+		#global-header h2 a { 
+			margin-left: 0;
+			width: 180px;
+			height: 59px;
+			top: -12px;
+		}
+		
+		#global-header h3 a, header h3 a:hover, header h3 a:visited {		margin-left: 172px;
+		}
+		
+		#global-header .partnership {display: none;}
+		/*titlecard*/
 		
 		#titlecard {
-			height: 600px;
+			height: 500px;
 		}
 		
-		.panel h2 {
-			font-size: 40px;
-			width: 478px;
-		}
-		
-		#chapter1 {
-			height: 600px;
-		}
-		
-		
-		
+		#title-inner {width: 420px;}
+		#title-inner h1 {font-size: 70px;}
 		#title-inner h3 {
-			font-size: 14px;
-			margin: 10px 0;
+			font-size: 18px;
+			font-weight: 600;
+			margin-left: 0;
 		}
 		
 		#title-play {
 			font-size: 24px;
 		}
 		
+		/*audio player */
+		.jp-seek-bar p {display: none;}
+		.jp-seek-bar {width: 65% !important;}
+
+		#chapter1 {
+			height: 600px;
+		}
+		
+		/*segments*/
+		#chapter1, .segment {height: 470px;}
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	
-		body {border-top: 3px solid blue;  padding-top: 23px;}
+		body {border-top: 3px solid blue;}
 		
 		
 		
@@ -1146,10 +1071,20 @@ right: 10px;
 			font-size: 40px;
 		}
 		
+		.segment {
+			min-height: 200px;
+		}
+		
 		
 		#chapter1 h2 {
 			font-size: 24px;
 		}
+		
+		/*audio player */
+		.jp-seek-bar {width: 52% !important;}
+		
+		/*segments*/
+		#chapter1, .segment {height: 340px;}
 		
 		
 	}
@@ -1187,7 +1122,7 @@ right: 10px;
 </div> <!-- titlecard -->
 
 <!-- !chapter1 -->
-<div id="chapter1">
+<div id="chapter1" class="starter">
 	<div class="ab-nav">
 	
 	<div class="panel-player">
@@ -1271,6 +1206,10 @@ right: 10px;
 </div><!-- /learn -->
 
 <!-- audio player --><div id="pop-audio" class="jp-jplayer"></div><!-- /audio player -->
+
+<link rel="stylesheet" href="css/socialcount.css">
+	<link rel="stylesheet" href="css/socialcount-icons.css">
+<script src="js/socialcount.js"></script>
 
 <!--[if lt IE 8 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
