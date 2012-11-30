@@ -892,9 +892,8 @@ font-weight: 200;
 #learn {
 	background: #fff;
 	position: relative;
-	 margin-top: -50px;
-	 padding-top: 100px;
-	 border-top: 5px solid #000;
+	 padding-top: 50px;
+	 border-top: 8px solid #000;
 	 z-index: 12;
 	
 }
@@ -942,35 +941,56 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 	display: none;
 }
 
+
+/** carousel **/
+
+.carousel {
+	width: 100%;
+	position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel .carousel-item {
+	display: none;
+}
+.carousel .carousel-active {
+	display: block;
+}
+
+.carousel .carousel-nav:nth-child(2) {
+	display: none;
+}
+
+
 /* notebook slideshow */
 
 #notebooks .carousel {
  	position: relative;
 }
 
+
 #notebooks .carousel p {
 	position: absolute;
-	bottom: 30px;
-	left: 0px;
+	bottom: 20px;
+	left: 15px;
 	font-family: helvetica, arial, sans-serif;
-	color: #555;
+	color: #999;
 	font-size: 12px;
-	
+	margin-right: 80px;
 }
 
-.carousel-nav {visibility: hidden;}
-
-#notebooks:hover .carousel-nav {visibility: visible;}
+.carousel-nav {background-color: #111; height: 70px;}
 
 .carousel-nav a {
-position: absolute;
-font-size: 180px;
-top: 400px;
+font-size: 30px;
 color: #fff;
 line-height: .1;
-z-index: 30;
 text-shadow: 1px 1px 3px #000;
-opacity: .8;
 }
 
 .carousel-nav a:hover {
@@ -978,13 +998,16 @@ color: #931313;
 }
 
 .carousel-nav .prev {
-left: 10px;
+position: absolute;
+bottom: 35px;
+right: 60px;
 }
 
 .carousel-nav .next {
-right: 10px;
+position: absolute;
+bottom: 35px;
+right: 15px;
 }
-
 
 
 /* #Media Queries
@@ -1160,32 +1183,13 @@ right: 10px;
 
 </div><!-- /chapter1 -->
 
-<div id="chapter2">
-
-
-
-</div><!-- /chapter2 -->
-
 <!-- !learn -->
 <div id="learn">
-
-<div class="container">
-		<div class="sixteen columns">
-		<h2>Explore the photos from this story at your own pace and learn more about Towanda</h2>
-	
-		<div id="notebooks">
-			<div class="carousel">
-				<div id="first-note" data-before="am.html">
-					<img src="img/flower-bridge.jpg">
-				</div>		
-			</div><!-- /carousel -->
-	    </div><!-- /notebooks -->
-	 </div><!--/sixteen-->
-</div><!-- /container -->
-
 	<div class="container">
+	
+
 		<div class="eleven columns">
-			<h2>Related content</h2>
+			<h2>Join the conversation</h2>
 			
 			<ul class="socialcount socialcount-small" data-url="http://dev.stateimpact.org/pennsylvania/boomtown/">
 	<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://dev.stateimpact.org/pennsylvania/boomtown/" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count">Like</span></a></li>
@@ -1193,6 +1197,48 @@ right: 10px;
 	<li class="googleplus"><a href="https://plusone.google.com/_/+1/confirm?url=http://dev.stateimpact.org/pennsylvania/boomtown/" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count">+1</span></a></li>
 </ul>
 		</div><!--/eleven-->
+<div id="rc">		
+		<h2 class="sixteen columns">Learn more about the Pennsylvania Fracking Boom</h2>
+		<div class="four columns">
+			<a href="http://www.npr.org/blogs/pictureshow/2012/07/14/156721610/rare-photos-one-of-woody-guthries-last-shows">
+			<img src="http://media.npr.org/news/specials/2012/cushman/img/promo-woody.jpg" alt="promo" class="scale-with-grid">
+			<p>Rare Photos: One Of Woody Guthrie's Last Shows</p>
+			</a>
+		</div><!-- /four -->
+		<div class="four columns">
+			<a href="http://www.npr.org/blogs/pictureshow/2012/06/07/152704170/what-lies-beneath-the-new-york-times-a-lively-morgue-and-its-lonely-keeper">
+			<img src="http://media.npr.org/news/specials/2012/cushman/img/promo-lively.jpg" alt="promo" class="scale-with-grid">
+			<p>What Lies Beneath The New York Times? A Lively Morgue And Its Lonely Keeper</p>
+			</a>
+		</div><!-- /four -->
+		<div class="four columns">
+			<a href="http://www.npr.org/blogs/pictureshow/2012/03/29/149607939/found-in-a-closet-a-photo-trove-of-60s-icons">
+			<img src="http://media.npr.org/news/specials/2012/cushman/img/promo-closet.jpg" alt="promo" class="scale-with-grid">
+			<p>Found In A Closet: A Photo Trove Of '60s Icons</p>
+			</a>
+		</div><!-- /four -->
+		<div class="four columns">
+			<a href="http://www.npr.org/blogs/pictureshow/2012/03/26/149391425/the-democratic-eye-of-dennis-darling-a-photography-retrospective-by-email">
+			<img src="http://media.npr.org/news/specials/2012/cushman/img/promo-email.jpg" alt="promo" class="scale-with-grid">
+			<p>A Lifetime Of Photos In A Little Email Retrospective</p>
+			</a>
+		</div><!-- /four -->
+		
+	</div><!-- /rc -->
+
+		<div class="sixteen columns">
+		<h2>Explore the photos from Boomtown at your own pace and learn more about Towanda</h2>
+	
+		<div id="notebooks">
+			<div class="carousel">
+				<div id="first-note" data-before="am.html">
+					<img src="img/flower-bridge.jpg">
+					<p>Caption</p>
+				</div>		
+			</div><!-- /carousel -->
+	    </div><!-- /notebooks -->
+	 </div><!--/sixteen-->
+	 
 	</div><!-- /container -->
 	
 	
