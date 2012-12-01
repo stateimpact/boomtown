@@ -314,7 +314,7 @@ target:'chapter1'
 pop.text({
 start: 273,
 end: 292,
-text:'<div id="s23"><h2>DATA Overlay TBD</h2></div>',
+text:'<div id="s23"><h2>Number of Commitments to the Bradford Co. Correctional Facility, 2008- 2012 (projected)</h2><p>From Bradford Co. District Attorney¹s office 2008: 895 2009: 1,002 2010: 1,065 2011: 1,173 2012*: 1,319 *(PROJECTED by Bradford Co. D.A., based on data collected before 5/7/12)</p></div>',
 target:'chapter1'
 });
 
@@ -346,7 +346,7 @@ target:'chapter1'
 pop.text({
 start: 314,
 end: 344,
-text:'<div id="s26a"><h2>1 Bedroom Apartment: 2008 275- 300 <br> 2011 1,000+</h2></div>',
+text:'<div id="s26a"><h2>1 Bedroom Apartment: 2008 275-300 <br> 2011 1,000+</h2></div>',
 target:'chapter1'
 });
 

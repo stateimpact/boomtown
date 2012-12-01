@@ -6,17 +6,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>BOOMTOWN | NPR StateImpact</title>
+	<title>BoomTown | NPR StateImpact</title>
 	
-<meta name="description" content="">
+<meta name="description" content="How does a natural gas boom do to a small town? See and hear how businesses, crime trends and relationships were forever changed in Towanda, Pennsylvania.">
 <meta name="author" content="NPR">
-<meta property="og:title" content="">
+<meta property="og:title" content="BoomTown">
 <meta property="og:type" content="article">
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 <meta property="og:site_name" content="NPR">
 <meta property="fb:admins" content="10217706">
-<meta property="og:description" content="">
+<meta property="og:description" content="What does a flurry of natural gas drilling do to a small town? See and hear how businesses, crime trends and relationships were forever changed as the Norman Rockwell painting went bye-bye in Towanda, Pennsylvania.">
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 	
@@ -217,7 +217,7 @@ margin: 0;
 /*title*/
 
 #titlecard {
-	background: #111 url(img/flower-bridge.jpg);
+	background: #111 url(img/flower-bridge-light.jpg);
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -269,7 +269,7 @@ text-transform: uppercase;
 #title-inner h3 {
 	font-size: 28px;
 	margin: 20px 45px 20px 10px;
-color: #333;
+color: #000;
 font-family: proxima-nova,helvetica, arial, sans-serif;
 line-height: 1.3;
 font-weight: 300;
@@ -382,25 +382,25 @@ border-left: 1px solid #444;
 color: #aaa;
 }
 
-#nr, #rent, #crime, #slowdown {
+#drill, #influx, #toll, #slowdown {
 	font-size: 11px;
 }
 
-#nr {
-	width: 13.24361485109845%;
+#drill {
+	width: 19.45968906727711%;
 }
 
-#rent {
-	width: 13%;
+
+
+#influx {
+	width: 29.536878000102945%;
 }
 
-#crime {
-	width: 33%;
+
+#toll {
+	width: 28.26742402011134%;
 }
 
-#slowdown {
-	width: 13%;
-}
 
 .jp-play-bar {
 display: block;
@@ -934,12 +934,12 @@ font-weight: 200;
 
 .carousel p {
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	left: 15px;
 	font-family: helvetica, arial, sans-serif;
 	color: #999;
-	font-size: 12px;
-	margin-right: 80px;
+	font-size: 13px;
+	margin-right: 110px;
 }
 
 .carousel-nav {background-color: #111; height: 70px;}
@@ -982,6 +982,126 @@ right: 15px;
 	opacity: .7;
 }
 
+/* social count */
+
+.socialcount {
+	color: #fff;
+}
+.socialcount > li {
+	background-color: #999;
+}
+.socialcount > li,
+.socialcount > li > a:focus,
+.socialcount .loading {
+	border-radius: 5px;
+}
+.socialcount > li > a:focus,
+.socialcount > li:hover,
+.socialcount > li.hover /* fix for IE and iframes */ {
+	background-color: #464646;
+}
+
+.socialcount {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	font-size: .875em;
+	line-height: 2.2em;
+	overflow: hidden;
+}
+
+.socialcount :link,
+.socialcount :visited {
+	color: inherit;
+}
+.socialcount > li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	position: relative;
+	vertical-align: top;
+	min-width: 80px;
+	text-align: center;
+	white-space: nowrap;
+	*margin-right: 4px;
+}
+.socialcount-small > li {
+	min-width: 0;
+}
+
+.socialcount-small.recommend .facebook {
+	min-width: 0;
+}
+
+.socialcount-small > li > a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.socialcount-small .count {
+	margin-left: 0;
+	display: none;
+}
+
+.socialcount-small.grade-a > li:hover > a,
+.socialcount-small.grade-a > li.hover > a{
+	cursor: pointer;
+}
+
+
+.social-icon {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  *margin-right: 5px;
+}
+
+.socialcount.grade-a > li:hover .social-icon {
+  display: none;
+}
+
+.socialcount-small.grade-a > li:hover .social-icon,
+.socialcount-large.grade-a > li:hover .social-icon {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.icon-sprite, .icon-facebook, .icon-googleplus, .icon-share, .icon-twitter {
+  background: url('img/icon-hd/icon-s8df06ae4f6.png') no-repeat;
+}
+
+.icon-facebook {
+  background-position: 0 0;
+  height: 15px;
+  width: 17px;
+}
+
+.icon-googleplus {
+  background-position: -21px 0;
+  height: 17px;
+  width: 20px;
+}
+
+.icon-twitter {
+  background-position: -69px 0;
+  height: 15px;
+  width: 17px;
+}
+
+/* HD icons */
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .social-icon {
+    -webkit-background-size: auto 17px;
+    -moz-background-size: auto 17px;
+    -o-background-size: auto 17px;
+    background-size: auto 17px;
+    background-image: url('img/icon-hd/icon-hd-s9293bc9986.png');
+  }
+}
+
+
 /* footer */
 
 footer { color: #333; margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; 
@@ -1013,7 +1133,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		
 		
 
-		.jp-seek-bar p {display: none;}
+		.jp-seek-bar p {font-size: 10px;}
 
 		.jp-seek-bar {width: 78% !important;}
 		
@@ -1051,7 +1171,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		#title-inner h1 {font-size: 70px;}
 		#title-inner h3 {
 			font-size: 18px;
-			font-weight: 600;
+			font-weight: 400;
 			margin-left: 0;
 		}
 		
@@ -1060,11 +1180,15 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		}
 		
 		/*audio player */
-		.jp-seek-bar p {display: none;}
+		.jp-seek-bar p {font-size: 10px;}
 		.jp-seek-bar {width: 65% !important;}
 
 		#chapter1 {
 			height: 600px;
+		}
+		
+		#chapter1 h2 {
+			font-size: 45px;
 		}
 		
 		/*segments*/
@@ -1087,6 +1211,13 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			font-size: 40px;
 		}
 		
+		#title-inner h3 {
+			font-size: 13px;
+			font-weight: 400;
+			margin-left: 0;
+			margin-top: 5px;
+		}
+		
 		.segment {
 			min-height: 200px;
 		}
@@ -1097,7 +1228,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		}
 		
 		/*audio player */
-		.jp-seek-bar {width: 52% !important;}
+		.jp-seek-bar {width: 49% !important;}
 		
 		/*segments*/
 		#chapter1, .segment {height: 340px;}
@@ -1162,9 +1293,9 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			</div>
 			
 			<div id="c-markers">
-			<p id="nr">Drill</p>
-			<p id="rent">Influx</p>
-			<p id="crime">Toll</p>
+			<p id="drill">Drill</p>
+			<p id="influx">Influx</p>
+			<p id="toll">Toll</p>
 			<p id="slowdown">Bust?</p>
 			</div>
 		</div><!-- /jp-seek-bar -->
@@ -1186,10 +1317,11 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 			
+			<h3>Share this story</h3>
+			
 			<ul class="socialcount socialcount-small" data-url="http://dev.stateimpact.org/pennsylvania/boomtown/">
 	<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://dev.stateimpact.org/pennsylvania/boomtown/" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count">Like</span></a></li>
 	<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://dev.stateimpact.org/pennsylvania/boomtown/" title="Share on Twitter"><span class="social-icon icon-twitter"></span><span class="count">Tweet</span></a></li>
-	<li class="googleplus"><a href="https://plusone.google.com/_/+1/confirm?url=http://dev.stateimpact.org/pennsylvania/boomtown/" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count">+1</span></a></li>
 </ul>
 		</div><!--/eleven-->
 		
@@ -1199,7 +1331,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			<div class="carousel">
 				<div id="first-note" data-before="am.html">
 					<img src="img/flower-bridge.jpg">
-					<p>Caption asdf asdf</p>
+					<p> A water truck drives over the bridge entering Towanda, Pa. Traffic in town increased dramatically with the boom in natural gas drilling.</p>
 					<span class="swipe-info">Swipe to view more photos ></span>
 				</div>		
 			</div><!-- /carousel -->
@@ -1247,8 +1379,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 
 <!-- audio player --><div id="pop-audio" class="jp-jplayer"></div><!-- /audio player -->
 
-<link rel="stylesheet" href="css/socialcount.css">
-	<link rel="stylesheet" href="css/socialcount-icons.css">
+
 <script src="js/socialcount.js"></script>
 
 <!--[if lt IE 8 ]>
