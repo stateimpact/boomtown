@@ -466,7 +466,7 @@ color: #ddd;
 
 
 
-#chapter1 h2 {
+.segment h2 {
 	font-size: 80px;
 	color: #fff;
 	line-height: 1;
@@ -479,7 +479,7 @@ text-shadow: 2px 2px 1px #000;
 
 /*segments */
 
-.segment {
+.segment, .intro {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -492,30 +492,63 @@ text-shadow: 2px 2px 1px #000;
 /**** introduction ****/
 
 #boom-intro {
-	background-color: #000;
-	-webkit-animation-duration: 10s;
-	-moz-animation-duration: 10s;
-	-ms-animation-duration: 10s;
-	-o-animation-duration: 10s;
-	animation-duration: 10s;
+	background: #111 url(img/old-bradford-map.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
 }
 
-#boom-intro h2 {
+#boom-intro1 {
+	background: #111 url(img/coal.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	}
+
+#boom-intro2 {
+	background: #111 url(img/logging.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	}
+	
+#boom-intro3 {
+	background: #111 url(img/intro-gas.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	}
+	
+.intro h2 {
+width: 750px;
 font-size: 70px;
-width: 50%;
-line-height: 1;
-margin: 0 50px;
-font-weight: 300;
+font-weight: 900;
 text-transform: uppercase;
-} 
-
-#boom-intro p {
-font-size: 20px;
-width: 50%;
-line-height: 1.3;
-margin: 20px 50px;
-font-weight: 200;
+text-align: center;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1;
+margin: 0 auto;
+padding-top: 100px;
 }
+
+.intro p {
+font-size: 30px;
+width: 560px;
+padding-top: 20px;
+line-height: 1.3;
+margin: 0 auto;
+color: #fff;
+text-shadow: 2px 2px 1px #000;
+line-height: 1.1em;
+}
+
+#boom-intro b {
+text-transform: uppercase;
+font-size: 24px;
+}
+
+/* end of intro */
 
 #s1 {
 	background: #111 url(img/nostalgia1d.jpg);
@@ -524,17 +557,6 @@ font-weight: 200;
 	background-size:cover;
 	}
 	
-#s1a {
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 90%;
-	height: 800px;
-	z-index: 10;
-	background-color: #333;
-	opacity: .6;
-	padding: 5%;
-}
 
 #s2 {
 	background: #111 url(img/chief-photo.jpg);

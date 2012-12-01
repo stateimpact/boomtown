@@ -16,14 +16,35 @@ pop.code({
 //intro
 pop.text({
 start: 1,
-end: 18,
-text:'<div id="boom-intro" class="segment animated fadeIn"><h2>Music and Intro TBD</h2><p>Towanda has been a boom town before. First came coal in the 19th century. Then came timber, in the early 20th. Both times, companies swooped in, carved out the region\'s natural resources, made a lot of people rich and then abruptly left town.</p><p>Towanda\'s latest boom began in 2007. That\'s when energy companies began buying up land near Towanda. Soon, the surrounding area in northeast Pennsylvania was home to more natural gas wells than any otherpart of the state. And in town, the economic and social fabric of Towanda began to change.</p></div>',
+end: 9,
+text:'<div id="boom-intro" class="intro animated fadeIn"><h2>Towanda has seen booms before</h2></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 5,
+end: 14,
+text:'<div id="boom-intro1" class="intro animated fadeIn"><h2>First came coal</h2></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 10,
+end: 20,
+text:'<div id="boom-intro2" class="intro animated fadeIn"><h2>Then came timber</h2></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 15,
+end: 30,
+text:'<div id="boom-intro3" class="intro animated fadeIn"><h2>The latest boom started in 2007</h2><p>This time: It\'s natural gas. The surrounding area of northeast Pennsylvania is now home to more natural gas wells than any other part of the state. For better or worse, life in town has changed.</p> <p>And for Towandans, one question looms: Does every boom have a bust?</p></div>',
 target:'chapter1'
 });
 
 //remove chapter1 background image
 pop.code({
-	start: 17,
+	start: 30,
 	end: 495,
 	onStart: function( options ) {  
 		$("#chapter1").removeClass("starter");
@@ -34,26 +55,27 @@ pop.code({
 });
 
 //s1
-
 pop.text({
-start: 15,
-end: 40,
+start: 30,
+end: 33,
 text:'<div id="s1" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
+/*CON ADDED THIS */
+//s1b
 pop.text({
-start: 15,
+start: 33,
 end: 40,
-text:'<div id="s1a"><h2>Towanda was like a Norman Rockwell picture as late as like ten years ago.</h2></div>',
+text:'<div id="s1b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s2
 
 pop.text({
-start: 36,
-end: 52,
+start: 40,
+end: 45,
 text:'<div id="s2" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
