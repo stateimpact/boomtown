@@ -72,7 +72,6 @@ target:'chapter1'
 });
 
 //s2
-
 pop.text({
 start: 40,
 end: 45,
@@ -80,11 +79,19 @@ text:'<div id="s2" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
+/*CON ADDED THIS */
+//s2b
+pop.text({
+start: 45,
+end: 51,
+text:'<div id="s2b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
 
 //s3
 pop.text({
-start: 46,
-end: 59,
+start: 51,
+end: 55,
 text:'<div id="s3" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -92,55 +99,90 @@ target:'chapter1'
 //s3a
 
 pop.text({
-start: 53,
-end: 77,
+start: 55,
+end: 59,
 text:'<div id="s3a" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s3d
+pop.text({
+start: 59,
+end: 67,
+text:'<div id="s3d" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //maps
 
 pop.text({
-start: 56,
-end: 58,
+start: 63,
+end: 67,
 text:'<div class="map"><img src="img/map8.png" alt="2008"><p>2008: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 58,
-end: 60,
+start: 63.5,
+end: 67,
 text:'<div class="map"><img src="img/map9.png" alt="2009"><p>2009: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 60,
-end: 62,
+start: 64,
+end: 67,
 text:'<div class="map"><img src="img/map10.png" alt="2010"><p>2010: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 62,
-end: 64,
+start: 64.5,
+end: 67,
 text:'<div class="map"><img src="img/map11.png" alt="2011"><p>2011: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 64,
-end: 71,
+start: 65,
+end: 67,
 text:'<div class="map"><img src="img/map12.png" alt="2012"><p>2012: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
+/*CON ADDED THIS */
+//s3b
+pop.text({
+start: 67,
+end: 72,
+text:'<div id="s3b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s4b
+pop.text({
+start: 72,
+end: 77,
+text:'<div id="s4b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s4c
+pop.text({
+start: 77,
+end: 81,
+text:'<div id="s4c" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
 
 //s4
 
 pop.text({
-start: 71,
-end: 91,
+start: 81,
+end: 87,
 text:'<div id="s4" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -149,7 +191,7 @@ target:'chapter1'
 
 pop.text({
 start: 87,
-end: 101,
+end: 95,
 text:'<div id="s5" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -158,35 +200,54 @@ target:'chapter1'
 //s6
 
 pop.text({
-start: 97,
-end: 111,
+start: 95,
+end: 100,
 text:'<div id="s6" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//sb6
+pop.text({
+start: 100,
+end: 105,
+text:'<div id="s6b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s7
 
 pop.text({
-start: 107,
-end: 116,
+start: 105,
+end: 110,
 text:'<div id="s7" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s8
-
+/*
 pop.text({
 start: 112,
 end: 121,
 text:'<div id="s8" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
+*/
+
+/*CON ADDED THIS */
+//s8b
+pop.text({
+start: 110,
+end: 113,
+text:'<div id="s8b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
 
 //s9
 
 pop.text({
-start: 117,
-end: 129,
+start: 113,
+end: 116,
 text:'<div id="s9" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -194,8 +255,8 @@ target:'chapter1'
 //s10
 
 pop.text({
-start: 125,
-end: 142,
+start: 116,
+end: 124,
 text:'<div id="s10" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -203,63 +264,99 @@ target:'chapter1'
 //s11
 
 pop.text({
-start: 138,
-end: 151,
+start: 124,
+end: 137,
 text:'<div id="s11" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s11b
+pop.text({
+start: 137,
+end: 142,
+text:'<div id="s11b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s11a
 
 pop.text({
-start: 147,
-end: 165,
+start: 142,
+end: 152,
 text:'<div id="s11a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s12
 pop.text({
-start: 161,
-end: 176,
+start: 152,
+end: 158,
 text:'<div id="s12"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s13
 pop.text({
-start: 172,
-end: 188,
+start: 158,
+end: 162,
 text:'<div id="s13"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s14 charms
-
-/*
+/*CON ADDED THIS */
+//s13b
 pop.text({
-start: 178,
-end: 184,
-text:'<div id="s14"  class="segment animated fadeIn"></div>',
+start: 162,
+end: 166,
+text:'<div id="s13b"  class="segment animated fadeIn"></div>',
 target:'chapter1'
-});*/
+});
+
+/*CON ADDED THIS */
+//s13c
+pop.text({
+start: 166,
+end: 170,
+text:'<div id="s13c"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
 
 //s15
 pop.text({
-start: 184,
-end: 198,
+start: 170,
+end: 174,
 text:'<div id="s15"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s15b
+pop.text({
+start: 174,
+end: 178,
+text:'<div id="s15b"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s15c
+pop.text({
+start: 178,
+end: 184,
+text:'<div id="s15c"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s16
 pop.text({
-start: 194,
-end: 217,
+start: 184,
+end: 210,
 text:'<div id="s16"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
+/*
 //s17
 pop.text({
 start: 210,
@@ -267,6 +364,9 @@ end: 213,
 text:'<div id="s17"><h2>Holy smokes, we better get some pull on boots.</h2></div>',
 target:'chapter1'
 });
+*/
+
+/*CON STOPPED HERE */
 
 //s18
 pop.text({
