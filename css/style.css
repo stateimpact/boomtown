@@ -969,6 +969,16 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			font-size: 45px;
 		}
 		
+		/*carousel*/
+		
+		.carousel p {
+			bottom: 0;
+			font-size: 11px;
+			color: #fff;
+			line-height: 1;
+			margin-right: 90px;
+		}
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1007,6 +1017,12 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		
 		/*segments*/
 		#chapter1, .segment {height: 340px;}
+		
+		/*carousel*/
+		
+		.carousel-nav {
+			height: 90px;
+		}
 		
 		
 	}
