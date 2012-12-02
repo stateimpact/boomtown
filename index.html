@@ -41,8 +41,6 @@
 		<script src="js/libs/popcorn-complete.min.js"></script>
 		
 		<script src="js/plugins.js"></script>
-		
-		
 	 
 	 	<script type="text/javascript">
 	 	
@@ -77,6 +75,9 @@
 				$("#pop-audio").jPlayer("play", 0);
 			});
 			
+			//ajax include pattern
+			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
+			
 			if (Modernizr.touch){
 				$(".carousel").addClass("slide-touch");
 				} else {
@@ -91,7 +92,7 @@
 	
 	<script src="js/text.js"></script>
 
-<link rel="stylesheet" href="css/animate.css">
+ <link rel="stylesheet" href="css/animate.css">
 
 
 </head>

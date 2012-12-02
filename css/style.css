@@ -935,7 +935,8 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			top: -12px;
 		}
 		
-		#global-header h3 a, header h3 a:hover, header h3 a:visited {		margin-left: 172px;
+		#global-header h3 a, header h3 a:hover, header h3 a:visited {
+		margin-left: 172px;
 		}
 		
 		#global-header .partnership {display: none;}
@@ -960,17 +961,13 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		/*audio player */
 		.jp-seek-bar p {font-size: 10px;}
 		.jp-seek-bar {width: 65% !important;}
-
-		#chapter1 {
-			height: 600px;
-		}
+		
+		/*segments*/
+		#chapter1, .segment {height: 470px;}
 		
 		#chapter1 h2 {
 			font-size: 45px;
 		}
-		
-		/*segments*/
-		#chapter1, .segment {height: 470px;}
 		
 	}
 
