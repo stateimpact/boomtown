@@ -53,7 +53,14 @@
 			$(images).each(function() {
 				var image = $('<img />').attr('src', this);
 			});
-		
+			
+			$('#title-button').click(function() {
+				$.smoothScroll({
+					speed: 800,
+					scrollTarget: '#chapter1'
+				});
+				return false;
+			});
 		
 			//jplayer
 			$("#pop-audio").jPlayer({

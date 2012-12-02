@@ -3,16 +3,6 @@ var pop = Popcorn( '#jp_audio_0');
 
 /////////////// !CHAPTER 1
 
-pop.code({
-	start: 1,
-	onStart: function( options ) {  
-		$.smoothScroll({
-			speed: 800,
-			scrollTarget: '#chapter1'
-			});
-	}
-});
-
 //intro
 pop.text({
 start: 1,
