@@ -40,6 +40,22 @@
 	 	
 		//<![CDATA[
 		$(document).ready(function(){
+		
+			//preload intro images
+			
+			var images = [
+			'img/grey-map.jpg',
+			'img/coal.jpg',
+			'img/logging.jpg',
+			'img/intro-gas.jpg'
+			];
+
+			$(images).each(function() {
+				var image = $('<img />').attr('src', this);
+			});
+		
+		
+			//jplayer
 			$("#pop-audio").jPlayer({
 				ready: function () {
 					$(this).jPlayer("setMedia", {
@@ -72,6 +88,7 @@
 			//ajax include pattern
 			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
 			
+			//touch slideshow
 			if (Modernizr.touch){
 				$(".carousel").addClass("slide-touch");
 				} else {

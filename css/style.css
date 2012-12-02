@@ -233,6 +233,55 @@ color: #999;
 margin: 0;
 }
 
+/**** introduction ****/
+
+#boom-intro {
+	background: #111 url(../img/grey-map.jpg);
+}
+
+#boom-intro1 {
+	background: #111 url(../img/coal.jpg);
+	}
+
+#boom-intro2 {
+	background: #111 url(../img/logging.jpg);
+	}
+	
+#boom-intro3 {
+	background: #111 url(../img/intro-gas.jpg);
+	}
+	
+.intro h2 {
+width: 750px;
+font-size: 70px;
+font-weight: 900;
+text-transform: uppercase;
+text-align: center;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1;
+margin: 0 auto;
+padding-top: 100px;
+}
+
+.intro p {
+font-size: 30px;
+width: 560px;
+padding-top: 20px;
+line-height: 1.3;
+margin: 0 auto;
+color: #fff;
+text-shadow: 2px 2px 1px #000;
+line-height: 1.1em;
+}
+
+#boom-intro b {
+text-transform: uppercase;
+font-size: 24px;
+}
+
+/* end of intro */
+
 /*title*/
 
 #titlecard {
@@ -509,57 +558,6 @@ text-shadow: 2px 2px 1px #000;
 	-moz-background-size:cover;
 	background-size:cover;
 }
-
-
-
-/**** introduction ****/
-
-#boom-intro {
-	background: #111 url(../img/old-bradford-map.jpg);
-}
-
-#boom-intro1 {
-	background: #111 url(../img/coal.jpg);
-	}
-
-#boom-intro2 {
-	background: #111 url(../img/logging.jpg);
-	}
-	
-#boom-intro3 {
-	background: #111 url(../img/intro-gas.jpg);
-	}
-	
-.intro h2 {
-width: 750px;
-font-size: 70px;
-font-weight: 900;
-text-transform: uppercase;
-text-align: center;
-text-shadow: 2px 2px 1px #000;
-color: #fff;
-line-height: 1;
-margin: 0 auto;
-padding-top: 100px;
-}
-
-.intro p {
-font-size: 30px;
-width: 560px;
-padding-top: 20px;
-line-height: 1.3;
-margin: 0 auto;
-color: #fff;
-text-shadow: 2px 2px 1px #000;
-line-height: 1.1em;
-}
-
-#boom-intro b {
-text-transform: uppercase;
-font-size: 24px;
-}
-
-/* end of intro */
 
 .map {
 	position: absolute;
