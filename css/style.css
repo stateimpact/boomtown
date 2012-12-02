@@ -505,9 +505,6 @@ text-shadow: 2px 2px 1px #000;
 	width: 100%;
 	height: 800px;
 	z-index: 10;
-}
-
-.segment {
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
@@ -515,34 +512,6 @@ text-shadow: 2px 2px 1px #000;
 
 
 /**** introduction ****/
-
-#boom-intro {
-	background: #111 url(../img/old-bradford-map.jpg);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-}
-
-#boom-intro1 {
-	background: #111 url(../img/coal.jpg);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	}
-
-#boom-intro2 {
-	background: #111 url(../img/logging.jpg);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	}
-	
-#boom-intro3 {
-	background: #111 url(../img/intro-gas.jpg);
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	}
 	
 .intro h2 {
 width: 750px;
@@ -598,7 +567,8 @@ font-size: 24px;
 .map p {
 	width: 50%;
 	margin: 10px auto;
-	font-size: 22px;
+	font-size: 24px;
+	color: #fff;
 }
 
 #s17 {
@@ -654,6 +624,20 @@ font-size: 24px;
 }
 
 #rc {margin-top: 50px;}
+
+#learn h2 {
+	color: #333;
+	line-height: 1em;
+	margin-bottom: 10px;
+	}
+
+#conversation h2 {margin: 0;}
+
+#conversation .socialcount {margin-bottom: 20px;}
+
+#conversation p {font-size: 16px;}
+
+#photogallery {margin-top: 20px;}
 
 /** carousel **/
 
@@ -963,15 +947,38 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		.jp-seek-bar {width: 65% !important;}
 		
 		/*segments*/
-		#chapter1, .segment {height: 470px;}
+		#chapter1, .segment, .intro {height: 470px;}
 		
 		#chapter1 h2 {
 			font-size: 45px;
 		}
 		
+		/*intro*/
+		.intro h2 {
+			width: 420px;
+			font-size: 42px;
+			padding-top: 70px;
+		}
+
+		.intro p {
+			font-size: 18px;
+			width: 370px;
+			padding-top: 20px;
+		}
+		
+		/*map*/
+		.map img{
+			width: 70%;
+		}
+		
+		.map p{
+			width: 70%;
+			font-size: 18px
+		}
+		
 		/*carousel*/
 		
-		.carousel p {
+		#learn .carousel p {
 			bottom: 0;
 			font-size: 11px;
 			color: #fff;
@@ -986,7 +993,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 	
 		body {border-top: 3px solid blue;}
 		
-		
+		#titlecard {height: 400px}
 		
 		#title-inner {
 			width: 300px;
@@ -1003,10 +1010,6 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			margin-top: 5px;
 		}
 		
-		.segment {
-			min-height: 200px;
-		}
-		
 		
 		#chapter1 h2 {
 			font-size: 24px;
@@ -1015,8 +1018,51 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		/*audio player */
 		.jp-seek-bar {width: 49% !important;}
 		
+		.jp-seek-bar p {display: none;}
+		
 		/*segments*/
-		#chapter1, .segment {height: 340px;}
+		#chapter1, .segment, .intro {height: 310px;}
+		
+		/*intro */
+		.intro h2 {
+			width: 350px;
+			font-size: 24px;
+			padding-top: 70px;
+		}
+
+		.intro p {
+			font-size: 16px;
+			width: 320px;
+			padding-top: 20px;
+		}
+		
+		/*map*/
+		.map {padding-top: 40px;}
+
+		.map img{
+			width: 70%;
+		}
+		
+		.map p{
+			width: 70%;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+		
+		/*learn*/
+		
+		#learn {
+			border-top: 3px solid #000;
+			padding-top: 30px;
+		}
+		
+		#learn h2 {
+		line-height: 1em; 
+		font-size: 18px; 
+		margin-bottom: 10px;
+		}
+		
+		#learn p {font-size: 14px;}
 		
 		/*carousel*/
 		
