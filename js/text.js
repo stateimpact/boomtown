@@ -54,10 +54,9 @@ pop.code({
 	}
 });
 
-//delayed loading of background image
+//delayed loading of background images
 pop.code({
 	start: 10,
-	end: 495,
 	onStart: function( options ) {  
 		$('#s1').css('background-image', 'url(' + 'img/nostalgia1d.jpg' + ')');
 		$('#s1b').css('background-image', 'url(' + 'img/sleepy.jpg' + ')');
@@ -66,6 +65,39 @@ pop.code({
 		$('#s3').css('background-image', 'url(' + 'img/shale-well1a.jpg' + ')');
 		$('#s3a').css('background-image', 'url(' + 'img/shale-well2.jpg' + ')');
 		$('#s3b').css('background-image', 'url(' + 'img/rural.jpg' + ')');
+		$('#s4').css('background-image', 'url(' + 'img/old-towanda.jpg' + ')');
+		$('#s4b').css('background-image', 'url(' + 'img/truck3.jpg' + ')');
+		$('#s4c').css('background-image', 'url(' + 'img/epler.jpg' + ')');
+		$('#s5').css('background-image', 'url(' + 'img/mailboxes.jpg' + ')');
+	}
+});
+
+pop.code({
+	start: 20,
+	onStart: function( options ) {  
+		$('#s6').css('background-image', 'url(' + 'img/barbara-karen.jpg' + ')');
+		$('#s6b').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
+		$('#s7').css('background-image', 'url(' + 'img/coffee-guys1.jpg' + ')');
+		$('#s8b').css('background-image', 'url(' + 'img/openmic.jpg' + ')');
+		$('#s9').css('background-image', 'url(' + 'img/musician.jpg' + ')');
+		$('#s10').css('background-image', 'url(' + 'img/restaurant-wide-shot.jpg' + ')');
+		$('#s11').css('background-image', 'url(' + 'img/courthouse.jpg' + ')');
+		$('#s11b').css('background-image', 'url(' + 'img/headshot.jpg' + ')');
+		$('#s11a').css('background-image', 'url(' + 'img/truck-flag.jpg' + ')');
+		$('#s12').css('background-image', 'url(' + 'img/menu.jpg' + ')');
+		$('#s13').css('background-image', 'url(' + 'img/jewelery1.jpg' + ')');
+		$('#s13b').css('background-image', 'url(' + 'img/necklace.jpg' + ')');
+		$('#s13c').css('background-image', 'url(' + 'img/necklace2.jpg' + ')');
+	}
+});
+
+pop.code({
+	start: 30,
+	onStart: function( options ) {  
+		$('#s15').css('background-image', 'url(' + 'img/shoe-store1.jpg' + ')');
+		$('#s15b').css('background-image', 'url(' + 'img/jan.jpg' + ')');
+		$('#s15c').css('background-image', 'url(' + 'img/oldboots.jpg' + ')');
+		$('#s16').css('background-image', 'url(' + 'img/shoe-store-boots.jpg' + ')');
 	}
 });
 
