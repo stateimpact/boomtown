@@ -54,7 +54,7 @@ pop.code({
 	}
 });
 
-//delayed loading of background images
+//delayed loading of background images con edits: s1b, s2b, s3b, s4b, s4c, s6b, s8b, s11b, s13b, s13c, s15b, s15c
 pop.code({
 	start: 10,
 	onStart: function( options ) {  
@@ -98,6 +98,43 @@ pop.code({
 		$('#s15b').css('background-image', 'url(' + 'img/jan.jpg' + ')');
 		$('#s15c').css('background-image', 'url(' + 'img/oldboots.jpg' + ')');
 		$('#s16').css('background-image', 'url(' + 'img/shoe-store-boots.jpg' + ')');
+		//con stopped here
+		$('#s18').css('background-image', 'url(' + 'img/sales-tax-business.jpg' + ')');
+		$('#s19').css('background-image', 'url(' + 'img/chesapeake.jpg' + ')');
+		$('#s20').css('background-image', 'url(' + 'img/gtp-manufacturing.jpg' + ')');
+		$('#s20a').css('background-image', 'url(' + 'img/gtp-factory1.jpg' + ')');
+		$('#s20b').css('background-image', 'url(' + 'img/dupont.jpg' + ')');
+		$('#s21').css('background-image', 'url(' + 'img/chief-at-station.jpg' + ')');
+		$('#s22').css('background-image', 'url(' + 'img/welcome-towanda.jpg' + ')');
+		$('#s24').css('background-image', 'url(' + 'img/deer-head.jpg' + ')');
+		$('#s26').css('background-image', 'url(' + 'img/rent-sign.jpg' + ')');		
+	}
+});
+
+pop.code({
+	start: 40,
+	onStart: function( options ) {  
+		$('#s27').css('background-image', 'url(' + 'img/classified.jpg' + ')');
+		$('#s28').css('background-image', 'url(' + 'img/joe-benjamin.jpg' + ')');
+		$('#s29').css('background-image', 'url(' + 'img/grace1.jpg' + ')');
+		$('#s30').css('background-image', 'url(' + 'img/grace2.jpg' + ')');
+		$('#s31').css('background-image', 'url(' + 'img/taco-food.jpg' + ')');
+		$('#s32').css('background-image', 'url(' + 'img/taco.jpg' + ')');
+		$('#s33').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
+		$('#s34').css('background-image', 'url(' + 'img/truck2.jpg' + ')');
+		$('#s35').css('background-image', 'url(' + 'img/truck3.jpg' + ')');
+		$('#s36').css('background-image', 'url(' + 'img/truck4.jpg' + ')');
+		$('#s37').css('background-image', 'url(' + 'img/old-man.jpg' + ')');
+		$('#s38').css('background-image', 'url(' + 'img/town-square-clock.jpg' + ')');
+		$('#s39').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
+	}
+});
+
+pop.code({
+	start: 50,
+	onStart: function( options ) {  
+		$('#s40').css('background-image', 'url(' + 'img/fnl.jpg' + ')');
+		$('#s41').css('background-image', 'url(' + 'img/foggy-highway.jpg' + ')');
 	}
 });
 
