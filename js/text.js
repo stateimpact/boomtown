@@ -38,6 +38,7 @@ pop.code({
 	end: 495,
 	onStart: function( options ) {  
 		$("#chapter1").removeClass("starter");
+		$("#feature-player").addClass("hidden");
 	},
 	onEnd: function( options ) {
 		$("#chapter1").addClass("starter");
