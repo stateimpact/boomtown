@@ -44,13 +44,28 @@ target:'chapter1'
 
 //remove chapter1 background image
 pop.code({
-	start: 30,
+	start: 5,
 	end: 495,
 	onStart: function( options ) {  
 		$("#chapter1").removeClass("starter");
 	},
 	onEnd: function( options ) {
 		$("#chapter1").addClass("starter");
+	}
+});
+
+//delayed loading of background image
+pop.code({
+	start: 10,
+	end: 495,
+	onStart: function( options ) {  
+		$('#s1').css('background-image', 'url(' + 'img/nostalgia1d.jpg' + ')');
+		$('#s1b').css('background-image', 'url(' + 'img/sleepy.jpg' + ')');
+		$('#s2').css('background-image', 'url(' + 'img/chief-photo.jpg' + ')');
+		$('#s2b').css('background-image', 'url(' + 'img/boro.jpg' + ')');
+		$('#s3').css('background-image', 'url(' + 'img/shale-well1a.jpg' + ')');
+		$('#s3a').css('background-image', 'url(' + 'img/shale-well2.jpg' + ')');
+		$('#s3b').css('background-image', 'url(' + 'img/rural.jpg' + ')');
 	}
 });
 
@@ -100,17 +115,8 @@ target:'chapter1'
 
 pop.text({
 start: 55,
-end: 59,
-text:'<div id="s3a" class="segment animated fadeIn"></div>',
-target:'chapter1'
-});
-
-/*CON ADDED THIS */
-//s3d
-pop.text({
-start: 59,
 end: 67,
-text:'<div id="s3d" class="segment animated fadeIn"></div>',
+text:'<div id="s3a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -118,28 +124,28 @@ target:'chapter1'
 
 pop.text({
 start: 63,
-end: 67,
+end: 63.5,
 text:'<div class="map"><img src="img/map8.png" alt="2008"><p>2008: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 63.5,
-end: 67,
+end: 64,
 text:'<div class="map"><img src="img/map9.png" alt="2009"><p>2009: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 64,
-end: 67,
+end: 64.5,
 text:'<div class="map"><img src="img/map10.png" alt="2010"><p>2010: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 64.5,
-end: 67,
+end: 65,
 text:'<div class="map"><img src="img/map11.png" alt="2011"><p>2011: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
