@@ -81,85 +81,10 @@ c.jPlayer.warningHint={CSS_SELECTOR_COUNT:"Check your css selector and the ances
 * Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
 (function(a){function f(a){return a.replace(/(:|\.)/g,"\\$1")}var b="1.4.6",c={exclude:[],excludeWithin:[],offset:0,direction:"top",scrollElement:null,scrollTarget:null,beforeScroll:function(){},afterScroll:function(){},easing:"swing",speed:400,autoCoefficent:2},d=function(b){var c=[],d=!1,e=b.dir&&b.dir=="left"?"scrollLeft":"scrollTop";return this.each(function(){if(this==document||this==window)return;var b=a(this);b[e]()>0?c.push(this):(b[e](1),d=b[e]()>0,d&&c.push(this),b[e](0))}),c.length||this.each(function(a){this.nodeName==="BODY"&&(c=[this])}),b.el==="first"&&c.length>1&&(c=[c[0]]),c},e="ontouchend"in document;a.fn.extend({scrollable:function(a){var b=d.call(this,{dir:a});return this.pushStack(b)},firstScrollable:function(a){var b=d.call(this,{el:"first",dir:a});return this.pushStack(b)},smoothScroll:function(b){b=b||{};var c=a.extend({},a.fn.smoothScroll.defaults,b),d=a.smoothScroll.filterPath(location.pathname);return this.unbind("click.smoothscroll").bind("click.smoothscroll",function(b){var e=this,g=a(this),h=c.exclude,i=c.excludeWithin,j=0,k=0,l=!0,m={},n=location.hostname===e.hostname||!e.hostname,o=c.scrollTarget||(a.smoothScroll.filterPath(e.pathname)||d)===d,p=f(e.hash);if(!c.scrollTarget&&(!n||!o||!p))l=!1;else{while(l&&j<h.length)g.is(f(h[j++]))&&(l=!1);while(l&&k<i.length)g.closest(i[k++]).length&&(l=!1)}l&&(b.preventDefault(),a.extend(m,c,{scrollTarget:c.scrollTarget||p,link:e}),a.smoothScroll(m))}),this}}),a.smoothScroll=function(b,c){var d,e,f,g,h=0,i="offset",j="scrollTop",k={},l={},m=[];typeof b=="number"?(d=a.fn.smoothScroll.defaults,f=b):(d=a.extend({},a.fn.smoothScroll.defaults,b||{}),d.scrollElement&&(i="position",d.scrollElement.css("position")=="static"&&d.scrollElement.css("position","relative")),f=c||a(d.scrollTarget)[i]()&&a(d.scrollTarget)[i]()[d.direction]||0),d=a.extend({link:null},d),j=d.direction=="left"?"scrollLeft":j,d.scrollElement?(e=d.scrollElement,h=e[j]()):e=a("html, body").firstScrollable(),k[j]=f+h+d.offset,d.beforeScroll.call(e,d),g=d.speed,g==="auto"&&(g=k[j]||e.scrollTop(),g=g/d.autoCoefficent),l={duration:g,easing:d.easing,complete:function(){d.afterScroll.call(d.link,d)}},d.step&&(l.step=d.step),e.length?e.stop().animate(k,l):d.afterScroll.call(d.link,d)},a.smoothScroll.version=b,a.smoothScroll.filterPath=function(a){return a.replace(/^\//,"").replace(/(index|default).[a-zA-Z]{3,4}$/,"").replace(/\/$/,"")},a.fn.smoothScroll.defaults=c})(jQuery);
 
-/*! Ajax-include pattern. Copyright 2012, Scott Jehl, Filament Group, Inc. Dual licensed under MIT and GPLv2 */
-/*
-  * Original idea by Scott Gonzalez :)
-  * To use, place attributes on content, pointing to a URL
-    * that should either replace, or insert before or after that anchor
-    * after the page has loaded
-    * Replace:	<a href="..." data-replace="articles/latest/fragment">Latest Articles</a>
-    * Before:	<a href="..." data-before="articles/latest/fragment">Latest Articles</a>
-    * After:	<a href="..." data-after="articles/latest/fragment">Latest Articles</a>
-    * Also, the data-threshold attr allows a min width for this to apply.
-    * After domready, you can use it like this: 
-         $("[data-append],[data-replace],[data-after],[data-before]").ajaxInclude();
-*/
-(function( $ ){
-	$.fn.ajaxInclude = function( proxy ) {
-		
-		var filelist = [],
-			els = this;
-		
-		return this.each(function( k ) {
-			var el			= $( this ),
-				target		= el.data( "target" ),
-				targetEl	= target && $( target ) || el,
-				threshold	= screen.width > parseFloat( el.data( "threshold" ) || 0 ),
-				methods		= [ "append", "replace", "before", "after" ],
-				method,
-				url;
-
-			if ( threshold ) {
-
-				for( var ml = methods.length, i=0; i < ml; i++ ){
-					if( el.is( "[data-" + methods[ i ] + "]" ) ){
-						method	= methods[ i ];
-						url		= el.attr( "data-" + method );
-					}
-				}
-
-				if( method === "replace" ){
-					method += "With";
-				}
-
-				if( url && method ){
-					
-					el
-						.data( "method", method )
-						.data( "url", url )
-						.bind( "ajaxInclude", function(e, data){
-							var content = $(data);
-							
-							if( $(this).data( "proxy" ) ){
-								content = content.filter( "entry[url=\"" + $(this).data( "url" ) + "\"]" ).html();
-							}
-							$( this )[ $(this).data( "method" ) ]( content );	
-						});
-					
-					if( proxy ){
-						
-						el.data( "proxy", proxy );
-						
-						if( $.inArray( url, filelist ) === -1 ){
-							filelist.push( url );
-						}
-						
-						if( k === els.length - 1 ){
-							url = proxy + filelist.join();
-						}
-					}
-					
-					if( !proxy || k === els.length-1 ){
-						$.get( url, function( data ) {	
-							( proxy ? els : el ).trigger( "ajaxInclude", [data] );
-						});
-					}
-				}
-
-			}
-		});
-	};
-})( jQuery );
+/*! Ajax-Include - v0.1.0 - 2012-10-23
+* http://filamentgroup.com/lab/ajax_includes_modular_content/
+* Copyright (c) 2012 @scottjehl, Filament Group, Inc.; Licensed MIT */
+(function(e,t){e.fn.ajaxInclude=function(t){function u(t){var n=t.data("url");o.proxy&&e.inArray(n,r)===-1?(r.push(n),i=i.add(t)):a(t.data("url"),t)}function a(t,n){e.get(t,function(e){n.trigger("ajaxIncludeResponse",[e])})}function f(){r.length&&(a(o.proxy+r.join(","),i),i=e(),r=[])}function l(e,t){function i(){u(e),f(),r.removeListener(i)}var r=n.matchMedia(t);r.addListener&&r.addListener(i)}var n=window,r=[],i=e(),s="data-ajax-bound",o={proxy:null};return typeof t=="string"?o.proxy=t:o=e.extend(o,t),this.not("["+s+"]").each(function(t){var r=e(this),i=r.attr("data-media"),a=["append","replace","before","after"],f,c;for(var h=a.length,p=0;p<h;p++)r.is("[data-"+a[p]+"]")&&(f=a[p],c=r.attr("data-"+f));f==="replace"&&(f+="With"),r.data("method",f).data("url",c).attr(s,!0).bind("ajaxIncludeResponse",function(e,t){var n=t;if(o.proxy){var i=n.match(new RegExp("<entry url=[\"']?"+r.data("url")+"[\"']?>(?:(?!</entry>)(.|\n))*","gmi"));i&&(n=i[0])}var s=r.triggerHandler("ajaxIncludeFilter",[n]);s&&(n=s),f==="replaceWith"?r.trigger("ajaxInclude",[n])[r.data("method")](n):r[r.data("method")](n).trigger("ajaxInclude",[n])}),!i||n.matchMedia&&n.matchMedia(i).matches?u(r):i&&n.matchMedia&&l(r,i)}),f(),this}})(jQuery);
 
 /*! Responsive Carousel - v0.1.0 - 2012-08-16
 * https://github.com/filamentgroup/responsive-carousel
