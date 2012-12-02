@@ -20,79 +20,23 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link rel="shortcut icon" href="http://stateimpact.npr.org/wp-content/themes/si-hub/img/favicon.png">
+<link rel="shortcut icon" href="http://stateimpact.npr.org/wp-content/themes/si-hub/img/favicon.png">
 	
-	<link rel="apple-touch-icon-precomposed" href="http://stateimpact.npr.org/wp-content/themes/si-hub/img/apple-touch-icon-precomposed.png">
-	
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/style.css">
 
 	<!-- Begin JavaScript -->
-		
+<script type="text/javascript" src="http://use.typekit.com/yey2zgp.js"></script> 
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
+<script type="text/javascript">L_PREFER_CANVAS = true;</script>
 	
-		<script src="js/libs/modernizr-2.0.6.min.js"></script>	
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-		
-		<script type="text/javascript" src="http://use.typekit.com/yey2zgp.js"></script> 
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
-  <script type="text/javascript">L_PREFER_CANVAS = true;</script>
-		
-		<script src="js/libs/popcorn-complete.min.js"></script>
-		
-		<script src="js/plugins.js"></script>
-	 
-	 	<script type="text/javascript">
-	 	
-		//<![CDATA[
-		$(document).ready(function(){
-			$("#pop-audio").jPlayer({
-				ready: function () {
-					$(this).jPlayer("setMedia", {
-						mp3: "boomtown.mp3",
-						oga: "boomtown.ogg"
-					}).jPlayer("pause");
-				},
-				ended: function (event) {
-					$(this).jPlayer("pause");
-				},
-				swfPath: "js",
-				supplied: "oga, mp3",
-				cssSelectorAncestor: "",
-				cssSelector: {
-					play: ".jp-play",
-					pause: ".jp-pause",
-					seekBar: ".jp-seek-bar",
-					playBar: ".jp-play-bar",
-					currentTime: ".currentTime",
-					duration: ".jp-duration"
-				}
-			});
-			
-			//jplayer events
+<script src="js/libs/modernizr-2.0.6.min.js"></script>	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="js/libs/popcorn-complete.min.js"></script>
 
-			$("#title-button").click( function() {
-				$("#pop-audio").jPlayer("play", 0);
-			});
-			
-			//ajax include pattern
-			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
-			
-			if (Modernizr.touch){
-				$(".carousel").addClass("slide-touch");
-				} else {
-					$(".carousel").addClass("slide-click");
-				}
 
-		});
-		//]]>
-		
-		</script>
-	<!-- End JavaScript -->
-	
-	<script src="js/text.js"></script>
-
- <link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/animate.css">
 
 
 </head>
@@ -233,7 +177,55 @@
 	
 </div><!-- /learn -->
 
-<script src="js/socialcount.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/text.js"></script>	 
+<script type="text/javascript">
+	 	
+		//<![CDATA[
+		$(document).ready(function(){
+			$("#pop-audio").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "boomtown.mp3",
+						oga: "boomtown.ogg"
+					}).jPlayer("pause");
+				},
+				ended: function (event) {
+					$(this).jPlayer("pause");
+				},
+				swfPath: "js",
+				supplied: "oga, mp3",
+				cssSelectorAncestor: "",
+				cssSelector: {
+					play: ".jp-play",
+					pause: ".jp-pause",
+					seekBar: ".jp-seek-bar",
+					playBar: ".jp-play-bar",
+					currentTime: ".currentTime",
+					duration: ".jp-duration"
+				}
+			});
+			
+			//jplayer events
+
+			$("#title-button").click( function() {
+				$("#pop-audio").jPlayer("play", 0);
+			});
+			
+			//ajax include pattern
+			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
+			
+			if (Modernizr.touch){
+				$(".carousel").addClass("slide-touch");
+				} else {
+					$(".carousel").addClass("slide-click");
+				}
+
+		});
+		//]]>
+		
+		</script>
+	<!-- End JavaScript -->
 
 <!--[if lt IE 8 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
