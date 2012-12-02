@@ -35,8 +35,57 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="js/libs/popcorn-complete.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/text.js"></script>	 
+<script type="text/javascript">
+	 	
+		//<![CDATA[
+		$(document).ready(function(){
+			$("#pop-audio").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "boomtown.mp3",
+						oga: "boomtown.ogg"
+					}).jPlayer("pause");
+				},
+				ended: function (event) {
+					$(this).jPlayer("pause");
+				},
+				swfPath: "js",
+				supplied: "oga, mp3",
+				cssSelectorAncestor: "",
+				cssSelector: {
+					play: ".jp-play",
+					pause: ".jp-pause",
+					seekBar: ".jp-seek-bar",
+					playBar: ".jp-play-bar",
+					currentTime: ".currentTime",
+					duration: ".jp-duration"
+				}
+			});
+			
+			//jplayer events
 
-<link rel="stylesheet" href="css/animate.css">
+			$("#title-button").click( function() {
+				$("#pop-audio").jPlayer("play", 0);
+			});
+			
+			//ajax include pattern
+			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
+			
+			if (Modernizr.touch){
+				$(".carousel").addClass("slide-touch");
+				} else {
+					$(".carousel").addClass("slide-click");
+				}
+
+		});
+		//]]>
+		
+		</script>
+	<!-- End JavaScript -->
+
+<!--<link rel="stylesheet" href="css/animate.css">-->
 
 </head>
 <body id="top">
@@ -178,56 +227,6 @@
 	
 	
 </div><!-- /learn -->
-
-<script src="js/plugins.js"></script>
-<script src="js/text.js"></script>	 
-<script type="text/javascript">
-	 	
-		//<![CDATA[
-		$(document).ready(function(){
-			$("#pop-audio").jPlayer({
-				ready: function () {
-					$(this).jPlayer("setMedia", {
-						mp3: "boomtown.mp3",
-						oga: "boomtown.ogg"
-					}).jPlayer("pause");
-				},
-				ended: function (event) {
-					$(this).jPlayer("pause");
-				},
-				swfPath: "js",
-				supplied: "oga, mp3",
-				cssSelectorAncestor: "",
-				cssSelector: {
-					play: ".jp-play",
-					pause: ".jp-pause",
-					seekBar: ".jp-seek-bar",
-					playBar: ".jp-play-bar",
-					currentTime: ".currentTime",
-					duration: ".jp-duration"
-				}
-			});
-			
-			//jplayer events
-
-			$("#title-button").click( function() {
-				$("#pop-audio").jPlayer("play", 0);
-			});
-			
-			//ajax include pattern
-			$( "[data-after]" ).ajaxInclude( { proxy: "quickconcat.php?wrap&files=" }  );
-			
-			if (Modernizr.touch){
-				$(".carousel").addClass("slide-touch");
-				} else {
-					$(".carousel").addClass("slide-click");
-				}
-
-		});
-		//]]>
-		
-		</script>
-	<!-- End JavaScript -->
 
 <!--[if lt IE 8 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
