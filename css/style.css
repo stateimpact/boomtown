@@ -511,7 +511,24 @@ text-shadow: 2px 2px 1px #000;
 }
 
 
+
 /**** introduction ****/
+
+#boom-intro {
+	background: #111 url(../img/old-bradford-map.jpg);
+}
+
+#boom-intro1 {
+	background: #111 url(../img/coal.jpg);
+	}
+
+#boom-intro2 {
+	background: #111 url(../img/logging.jpg);
+	}
+	
+#boom-intro3 {
+	background: #111 url(../img/intro-gas.jpg);
+	}
 	
 .intro h2 {
 width: 750px;

@@ -13,16 +13,6 @@ pop.code({
 	}
 });
 
-pop.code({
-	start: .5,
-	onStart: function( options ) {  
-		$('#boom-intro').css('background-image', 'url(' + 'img/old-bradford-map.jpg' + ')');
-		$('#boom-intro1').css('background-image', 'url(' + 'img/coal.jpg' + ')');
-		$('#boom-intro2').css('background-image', 'url(' + 'img/logging.jpg' + ')');
-		$('#boom-intro3').css('background-image', 'url(' + 'img/intro-gas.jpg' + ')');
-	}
-});
-
 //intro
 pop.text({
 start: 1,
