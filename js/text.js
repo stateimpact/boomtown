@@ -45,7 +45,7 @@ pop.code({
 	}
 });
 
-//delayed loading of background images con edits: s1b, s2b, s3b, s4b, s4c, s6b, s8b, s11b, s13b, s13c, s15b, s15c
+//delayed loading of background images con edits: s1b, s2b, s3b, s4b, s4c, s6b, s8b, s11b, s13b, s13c, s15b, s15c, s20, s20d, s33a, s33b, s33c, s39d, s39e,s39f
 pop.code({
 	start: 10,
 	onStart: function( options ) {  
@@ -90,13 +90,15 @@ pop.code({
 		$('#s15c').css('background-image', 'url(' + 'img/oldboots.jpg' + ')');
 		$('#s16').css('background-image', 'url(' + 'img/shoe-store-boots.jpg' + ')');
 		//con stopped here
-		$('#s18').css('background-image', 'url(' + 'img/sales-tax-business.jpg' + ')');
+		$('#s18').css('background-image', 'url(' + 'img/landscape.jpg' + ')');
 		$('#s19').css('background-image', 'url(' + 'img/chesapeake.jpg' + ')');
-		$('#s20').css('background-image', 'url(' + 'img/gtp-manufacturing.jpg' + ')');
-		$('#s20a').css('background-image', 'url(' + 'img/gtp-factory1.jpg' + ')');
-		$('#s20b').css('background-image', 'url(' + 'img/dupont.jpg' + ')');
-		$('#s21').css('background-image', 'url(' + 'img/chief-at-station.jpg' + ')');
-		$('#s22').css('background-image', 'url(' + 'img/welcome-towanda.jpg' + ')');
+		$('#s20').css('background-image', 'url(' + 'img/marquee.jpg' + ')');
+		$('#s20a').css('background-image', 'url(' + 'img/gtp-manufacturing.jpg' + ')');
+		$('#s20b').css('background-image', 'url(' + 'img/gtp-factory-1.jpg' + ')');
+		$('#s20c').css('background-image', 'url(' + 'img/dupont.jpg' + ')');
+		$('#s20d').css('background-image', 'url(' + 'img/spanish.jpg' + ')');
+		$('#s21').css('background-image', 'url(' + 'img/welcome-towanda.jpg' + ')');
+		$('#s23').css('background-image', 'url(' + 'img/chief-at-station.jpg' + ')');
 		$('#s24').css('background-image', 'url(' + 'img/deer-head.jpg' + ')');
 		$('#s26').css('background-image', 'url(' + 'img/rent-sign.jpg' + ')');		
 	}
@@ -112,19 +114,27 @@ pop.code({
 		$('#s31').css('background-image', 'url(' + 'img/taco-food.jpg' + ')');
 		$('#s32').css('background-image', 'url(' + 'img/taco.jpg' + ')');
 		$('#s33').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
+		$('#s33a').css('background-image', 'url(' + 'img/truckseq1.jpg' + ')');
+		$('#s33b').css('background-image', 'url(' + 'img/truckseq2.jpg' + ')');
+		$('#s33c').css('background-image', 'url(' + 'img/truckseq3.jpg' + ')');
 		$('#s34').css('background-image', 'url(' + 'img/truck2.jpg' + ')');
-		$('#s35').css('background-image', 'url(' + 'img/truck3.jpg' + ')');
 		$('#s36').css('background-image', 'url(' + 'img/truck4.jpg' + ')');
-		$('#s37').css('background-image', 'url(' + 'img/old-man.jpg' + ')');
-		$('#s38').css('background-image', 'url(' + 'img/town-square-clock.jpg' + ')');
-		$('#s39').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
+
 	}
 });
 
 pop.code({
 	start: 50,
-	onStart: function( options ) {  
-		$('#s40').css('background-image', 'url(' + 'img/fnl.jpg' + ')');
+	onStart: function( options ) {
+		$('#s37').css('background-image', 'url(' + 'img/old-man.jpg' + ')');
+		$('#s38').css('background-image', 'url(' + 'img/town-square-clock.jpg' + ')');
+		$('#s39').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
+		$('#s39b').css('background-image', 'url(' + 'img/headshot.jpg' + ')');
+		$('#s39c').css('background-image', 'url(' + 'img/jan.jpg' + ')');
+		$('#s39d').css('background-image', 'url(' + 'img/bootstore.jpg' + ')');
+		$('#s39e').css('background-image', 'url(' + 'img/gone.jpg' + ')');
+		$('#s39f').css('background-image', 'url(' + 'img/road.jpg' + ')');
+		$('#s39g').css('background-image', 'url(' + 'img/shale-well1a.jpg' + ')');
 		$('#s41').css('background-image', 'url(' + 'img/foggy-highway.jpg' + ')');
 	}
 });
@@ -436,224 +446,314 @@ target:'chapter1'
 
 //s18
 pop.text({
-start: 213,
-end: 229,
+start: 193,
+end: 201,
 text:'<div id="s18"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s18a
 pop.text({
-start: 213,
-end: 225,
+start: 194,
+end: 201,
 text:'<div id="s18a"><h2>Sales Tax collected in Bradford County jumped 61% over 4 years.</h2></div>',
 target:'chapter1'
 });
 
 //s19
 pop.text({
-start: 225,
-end: 235,
+start: 201,
+end: 205,
 text:'<div id="s19"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s20
 pop.text({
-start: 231,
-end: 244,
+start: 205,
+end: 210,
 text:'<div id="s20"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
+/*CON MOVED THE NEXT THREE AROUND AND EDITED TIME */
 //s20a
 pop.text({
-start: 240,
-end: 252,
+start: 210,
+end: 215,
 text:'<div id="s20a"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s20b
 pop.text({
-start: 248,
-end: 257,
+start: 215,
+end: 222,
 text:'<div id="s20b"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s20c
+pop.text({
+start: 222,
+end: 228,
+text:'<div id="s20c"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED IMAGE AND EDITED TIME */
+//s20d
+pop.text({
+start: 228,
+end: 233,
+text:'<div id="s20d"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s21
 pop.text({
-start: 253,
-end: 274,
+start: 233,
+end: 248,
 text:'<div id="s21"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s22
 pop.text({
-start: 270,
-end: 292,
-text:'<div id="s22"  class="segment animated fadeIn"></div>',
+start: 238,
+end: 248,
+text:'<div id="s22"><h2>Number of Commitments to the Bradford Co. Correctional Facility, 2008- 2012 (projected)</h2><p>From Bradford Co. District Attorney¹s office 2008: 895 2009: 1,002 2010: 1,065 2011: 1,173 2012*: 1,319 *(PROJECTED by Bradford Co. D.A., based on data collected before 5/7/12)</p></div>',
 target:'chapter1'
 });
 
 //s23
 pop.text({
-start: 273,
-end: 292,
-text:'<div id="s23"><h2>Number of Commitments to the Bradford Co. Correctional Facility, 2008- 2012 (projected)</h2><p>From Bradford Co. District Attorney¹s office 2008: 895 2009: 1,002 2010: 1,065 2011: 1,173 2012*: 1,319 *(PROJECTED by Bradford Co. D.A., based on data collected before 5/7/12)</p></div>',
+start: 249,
+end: 256,
+text:'<div id="s23" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s24
 pop.text({
-start: 288,
-end: 312,
+start: 256,
+end: 264,
 text:'<div id="s24" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s25
+//CON REMOVING TEXT 
+/*
 pop.text({
 start: 299.5,
 end: 312,
 text:'<div id="s25"><h2>I\'m pretty sure you can\'t shoot them in Texas either</h2></div>',
 target:'chapter1'
 });
+*/
 
 //s26
 pop.text({
-start: 308,
-end: 318,
+start: 264,
+end: 269,
 text:'<div id="s26" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s26a
 pop.text({
-start: 314,
-end: 344,
+start: 273,
+end: 287,
 text:'<div id="s26a"><h2>1 Bedroom Apartment: 2008 275-300 <br> 2011 1,000+</h2></div>',
 target:'chapter1'
 });
 
 //s27
 pop.text({
-start: 314,
-end: 344,
+start: 269,
+end: 287,
 text:'<div id="s27" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s28
 pop.text({
-start: 340,
-end: 363,
+start: 287,
+end: 295,
 text:'<div id="s28" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s29
 pop.text({
-start: 359,
-end: 363,
+start: 303,
+end: 311,
 text:'<div id="s29" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s30
 pop.text({
-start: 369,
-end: 389,
+start: 311,
+end: 320,
 text:'<div id="s30" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s31
 pop.text({
-start: 385,
-end: 405,
+start: 320,
+end: 329,
 text:'<div id="s31" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s32
 pop.text({
-start: 401,
-end: 414,
+start: 329,
+end: 339,
 text:'<div id="s32" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED NEXT THREE PIX */
+//s33a
+pop.text({
+start: 339,
+end: 342,
+text:'<div id="s33a" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s33b
+pop.text({
+start: 342,
+end: 345,
+text:'<div id="s33b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s33c
+pop.text({
+start: 345,
+end: 348,
+text:'<div id="s33c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33
 pop.text({
-start: 410,
-end: 434,
+start: 348,
+end: 353,
 text:'<div id="s33" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s34
 pop.text({
-start: 430,
-end: 437,
+start: 353,
+end: 358,
 text:'<div id="s34" class="segment animated fadeIn"></div>',
-target:'chapter1'
-});
-
-//s35
-pop.text({
-start: 433,
-end: 439,
-text:'<div id="s35" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s36
 pop.text({
-start: 435,
-end: 444,
+start: 357,
+end: 362,
 text:'<div id="s36" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s37
 pop.text({
-start: 440,
-end: 457,
+start: 362,
+end: 370,
 text:'<div id="s37" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s38
 pop.text({
-start: 453,
-end: 470,
+start: 370,
+end: 378,
 text:'<div id="s38" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s39
 pop.text({
-start: 466,
-end: 476,
+start: 378,
+end: 390,
 text:'<div id="s39" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s40
+/*CON RECYCLED IMAGE FROM EARLIER */
+//s39b
 pop.text({
-start: 472,
-end: 490,
-text:'<div id="s40" class="segment animated fadeIn"></div>',
+start: 390,
+end: 396,
+text:'<div id="s39b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
+/*CON ADDED RECYCLED IMAGE FROM EARLIER */
+//s39c
+pop.text({
+start: 396,
+end: 402,
+text:'<div id="s39c" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED NEXT 3 IMAGES SORRY */
+//s39d
+pop.text({
+start: 402,
+end: 409,
+text:'<div id="s39d" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s39e
+pop.text({
+start: 409,
+end: 416,
+text:'<div id="s39e" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s39f
+pop.text({
+start: 416,
+end: 424,
+text:'<div id="s39f" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED RECYCLED IMAGE FROM EARLIER */
+//s39g
+pop.text({
+start: 424,
+end: 434,
+text:'<div id="s39g" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s40
+/*
+pop.text({
+start: 3,
+end: 490,
+text:'<div id="s40" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});*/
+
 //s41
 pop.text({
-start: 486,
-/*end: 495,*/
+start: 434,
+end: 490,
 text:'<div id="s41" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
