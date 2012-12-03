@@ -33,12 +33,19 @@ target:'chapter1'
 });
 
 //remove chapter1 background image
+
+pop.code({
+	start: .5,
+	onStart: function( options ) {  
+		$("#feature-player").addClass("hidden");
+	}
+});
+
 pop.code({
 	start: 5,
 	end: 495,
 	onStart: function( options ) {  
 		$("#chapter1").removeClass("starter");
-		$("#feature-player").addClass("hidden");
 	},
 	onEnd: function( options ) {
 		$("#chapter1").addClass("starter");
@@ -586,7 +593,7 @@ target:'chapter1'
 
 //s29
 pop.text({
-start: 303,
+start: 295,
 end: 311,
 text:'<div id="s29" class="segment animated fadeIn"></div>',
 target:'chapter1'
