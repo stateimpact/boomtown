@@ -439,16 +439,6 @@ text:'<div id="s16"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-/*
-//s17
-pop.text({
-start: 210,
-end: 213,
-text:'<div id="s17"><h2>Holy smokes, we better get some pull on boots.</h2></div>',
-target:'chapter1'
-});
-*/
-
 /*CON STOPPED HERE */
 
 //s18
@@ -463,7 +453,7 @@ target:'chapter1'
 pop.text({
 start: 194,
 end: 201,
-text:'<div id="s18a"><h2>Sales Tax collected in Bradford County jumped 61% over 4 years.</h2></div>',
+text:'<div id="s18a" class="txt-overlay animated fadeIn"><h2>Sales Tax collected in Bradford County jumped 61% over 4 years.</h2></div>',
 target:'chapter1'
 });
 
@@ -529,7 +519,15 @@ target:'chapter1'
 pop.text({
 start: 238,
 end: 248,
-text:'<div id="s22"><h2>Number of Commitments to the Bradford Co. Correctional Facility, 2008- 2012 (projected)</h2><p>From Bradford Co. District Attorney¹s office 2008: 895 2009: 1,002 2010: 1,065 2011: 1,173 2012*: 1,319 *(PROJECTED by Bradford Co. D.A., based on data collected before 5/7/12)</p></div>',
+text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>The number of commitments to the Bradford Co. Correctional Facility jumped from 895 in 2008 to 1,065 in 2011.</h2></div>',
+target:'chapter1'
+});
+
+//s22a
+pop.text({
+start: 241,
+end: 248,
+text:'<div id="s22a" class="txt-overlay animated fadeIn"><h2>The number of commitments to the Bradford Co. Correctional Facility jumped from 895 in 2008 to 1,065 in 2011.</h2><h3>It is projected that there will be 1,319 commitments in 2012.</h3></div>',
 target:'chapter1'
 });
 
@@ -549,16 +547,6 @@ text:'<div id="s24" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//CON REMOVING TEXT 
-/*
-pop.text({
-start: 299.5,
-end: 312,
-text:'<div id="s25"><h2>I\'m pretty sure you can\'t shoot them in Texas either</h2></div>',
-target:'chapter1'
-});
-*/
-
 //s26
 pop.text({
 start: 264,
@@ -567,19 +555,35 @@ text:'<div id="s26" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s26a
-pop.text({
-start: 273,
-end: 287,
-text:'<div id="s26a"><h2>1 Bedroom Apartment: 2008 275-300 <br> 2011 1,000+</h2></div>',
-target:'chapter1'
-});
-
-//s27
+//s27-- classified
 pop.text({
 start: 269,
 end: 287,
 text:'<div id="s27" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s26a
+pop.text({
+start: 270,
+end: 287,
+text:'<div id="s26a" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2></div>',
+target:'chapter1'
+});
+
+//s26b
+pop.text({
+start: 272,
+end: 287,
+text:'<div id="s26b" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2><h3>2008: $275-300</h3></div>',
+target:'chapter1'
+});
+
+//s26c
+pop.text({
+start: 277,
+end: 287,
+text:'<div id="s26b" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2><h3>2008: $275-300</h3><h3>2011: $1,000+</h3></div>',
 target:'chapter1'
 });
 

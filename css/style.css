@@ -292,7 +292,78 @@ text-transform: uppercase;
 font-size: 24px;
 }
 
-/* end of intro */
+/* sales tax */
+
+#s18a h2 {
+width: 750px;
+font-size: 65px;
+font-weight: 900;
+text-transform: uppercase;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1;
+margin: 0 auto;
+padding-top: 100px;
+}
+
+/*crime */
+#s22{ background-color: rgba(000, 000, 000, 0.5); }
+
+#s22 h2, #s22a h2 {
+width: 750px;
+font-size: 31px;
+font-weight: 600;
+text-transform: uppercase;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1.2;
+margin: 0 auto;
+padding-top: 100px;
+text-align: center;
+}
+
+#s22 b {color: #fff; font-weight: 900;}
+
+#s22a h3 {
+width: 750px;
+font-size: 42px;
+font-weight: 900;
+text-transform: uppercase;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1.2;
+margin: 0 auto;
+padding-top: 20px;
+text-align: center;
+}
+
+/*rent*/
+
+#s26a h2, #s26b h2, #s26c h2 {
+width: 750px;
+font-size: 36px;
+font-weight: 600;
+text-transform: uppercase;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1.2;
+margin: 0 auto;
+padding-top: 100px;
+text-align: center;
+}
+
+#s26a h3, #s26b h3, #s26c h3 {
+width: 750px;
+font-size: 80px;
+font-weight: 900;
+text-transform: uppercase;
+text-shadow: 2px 2px 1px #000;
+color: #fff;
+line-height: 1.2;
+margin: 0 auto;
+padding-top: 20px;
+text-align: center;
+}
 
 /*title*/
 
@@ -569,6 +640,15 @@ text-shadow: 2px 2px 1px #000;
 	background-size:cover;
 }
 
+.txt-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	z-index: 11;
+}
+
 
 /*feature player*/
 
@@ -630,47 +710,6 @@ border: 1px solid #ddd;
 	font-size: 24px;
 	color: #fff;
 }
-
-#s17 {
-	/*holy smokes*/
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 100%;
-	z-index: 11;
-}
-
-
-
-
-#s23 {
-	/*police incidents in Towanda increased by 27% between 2009 and 2011 */
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 100%;
-	z-index: 11;
-}
-
-#s25 {
-	/*I'm pretty sure you can't shoot them in Texas either*/
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 100%;
-	z-index: 11;
-}
-
-#s26a {
-	/*data overlay*/
-	position: absolute;
-	top: 15px;
-	left: 0;
-	width: 100%;
-	z-index: 11;
-}
-
-
 
 /**** learn ****/
 
