@@ -66,6 +66,8 @@ pop.code({
 		$('#s4').css('background-image', 'url(' + 'img/old-towanda.jpg' + ')');
 		$('#s4b').css('background-image', 'url(' + 'img/truck3.jpg' + ')');
 		$('#s4c').css('background-image', 'url(' + 'img/epler.jpg' + ')');
+		//con2 added
+		$('#s4c').css('background-image', 'url(' + 'img/old-towanda2.jpg' + ')');
 		$('#s5').css('background-image', 'url(' + 'img/mailboxes.jpg' + ')');
 	}
 });
@@ -80,6 +82,8 @@ pop.code({
 		$('#s9').css('background-image', 'url(' + 'img/musician.jpg' + ')');
 		$('#s10').css('background-image', 'url(' + 'img/restaurant-wide-shot.jpg' + ')');
 		$('#s11').css('background-image', 'url(' + 'img/courthouse.jpg' + ')');
+		//con2 added
+		$('#s11c').css('background-image', 'url(' + 'img/land.jpg' + ')');
 		$('#s11b').css('background-image', 'url(' + 'img/headshot.jpg' + ')');
 		$('#s11a').css('background-image', 'url(' + 'img/truck-flag.jpg' + ')');
 		$('#s12').css('background-image', 'url(' + 'img/menu.jpg' + ')');
@@ -116,8 +120,12 @@ pop.code({
 	onStart: function( options ) {  
 		$('#s27').css('background-image', 'url(' + 'img/classified.jpg' + ')');
 		$('#s28').css('background-image', 'url(' + 'img/joe-benjamin.jpg' + ')');
+		//con2 added
+		$('#s28b').css('background-image', 'url(' + 'img/rent2.jpg' + ')');
 		$('#s29').css('background-image', 'url(' + 'img/grace1.jpg' + ')');
 		$('#s30').css('background-image', 'url(' + 'img/grace2.jpg' + ')');
+		//con2 added
+		$('#s30b').css('background-image', 'url(' + 'img/grace3.jpg' + ')');
 		$('#s31').css('background-image', 'url(' + 'img/taco-food.jpg' + ')');
 		$('#s32').css('background-image', 'url(' + 'img/taco.jpg' + ')');
 		$('#s33').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
@@ -135,6 +143,8 @@ pop.code({
 	onStart: function( options ) {
 		$('#s37').css('background-image', 'url(' + 'img/old-man.jpg' + ')');
 		$('#s38').css('background-image', 'url(' + 'img/town-square-clock.jpg' + ')');
+		//con2 added
+		$('#s38b').css('background-image', 'url(' + 'img/slow.jpg' + ')');
 		$('#s39').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
 		$('#s39b').css('background-image', 'url(' + 'img/headshot.jpg' + ')');
 		$('#s39c').css('background-image', 'url(' + 'img/jan.jpg' + ')');
@@ -142,6 +152,8 @@ pop.code({
 		$('#s39e').css('background-image', 'url(' + 'img/gone.jpg' + ')');
 		$('#s39f').css('background-image', 'url(' + 'img/road.jpg' + ')');
 		$('#s39g').css('background-image', 'url(' + 'img/shale-well1a.jpg' + ')');
+		//con2 added
+		$('#s41a').css('background-image', 'url(' + 'img/burn.jpg' + ')');
 		$('#s41').css('background-image', 'url(' + 'img/foggy-highway.jpg' + ')');
 	}
 });
@@ -252,29 +264,31 @@ text:'<div id="s4b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-/*CON ADDED THIS */
-//s4c
-pop.text({
-start: 77,
-end: 81,
-text:'<div id="s4c" class="segment animated fadeIn"></div>',
-target:'chapter1'
-});
+
 
 //s4
 
 pop.text({
-start: 81,
-end: 87,
+start: 77,
+end: 86,
 text:'<div id="s4" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+/*CON ADDED THIS */
+//s4c
+pop.text({
+start: 86,
+end: 91,
+text:'<div id="s4c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s5
 
 pop.text({
-start: 87,
-end: 95,
+start: 91,
+end: 97,
 text:'<div id="s5" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -283,8 +297,8 @@ target:'chapter1'
 //s6
 
 pop.text({
-start: 95,
-end: 100,
+start: 97,
+end: 101,
 text:'<div id="s6" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -292,7 +306,7 @@ target:'chapter1'
 /*CON ADDED THIS */
 //sb6
 pop.text({
-start: 100,
+start: 101,
 end: 105,
 text:'<div id="s6b" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -348,8 +362,16 @@ target:'chapter1'
 
 pop.text({
 start: 124,
-end: 137,
+end: 130,
 text:'<div id="s11" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s11c
+pop.text({
+start: 130,
+end: 137,
+text:'<div id="s11c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
@@ -434,7 +456,7 @@ target:'chapter1'
 //s16
 pop.text({
 start: 184,
-end: 210,
+end: 193,
 text:'<div id="s16"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -510,7 +532,7 @@ target:'chapter1'
 //s21
 pop.text({
 start: 233,
-end: 249,
+end: 248,
 text:'<div id="s21"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -518,7 +540,7 @@ target:'chapter1'
 //s22
 pop.text({
 start: 240,
-end: 249,
+end: 248,
 text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>The Bradford County\'s criminal caseload increased by 40% from 2009 to 2011</h2></div>',
 target:'chapter1'
 });
@@ -587,9 +609,17 @@ text:'<div id="s28" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s29
+//s28b
 pop.text({
 start: 295,
+end: 303,
+text:'<div id="s28b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s29
+pop.text({
+start: 303,
 end: 311,
 text:'<div id="s29" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -603,18 +633,26 @@ text:'<div id="s30" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s31
+//s30b
 pop.text({
 start: 320,
-end: 329,
+end: 326,
+text:'<div id="s30b" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s31
+pop.text({
+start: 326,
+end: 332,
 text:'<div id="s31" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s32
 pop.text({
-start: 329,
-end: 339,
+start: 332,
+end: 340,
 text:'<div id="s32" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -622,71 +660,79 @@ target:'chapter1'
 /*CON ADDED NEXT THREE PIX */
 //s33a
 pop.text({
-start: 339,
-end: 342,
+start: 340,
+end: 343,
 text:'<div id="s33a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33b
 pop.text({
-start: 342,
-end: 345,
+start: 343,
+end: 347,
 text:'<div id="s33b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33c
 pop.text({
-start: 345,
-end: 348,
+start: 347,
+end: 351,
 text:'<div id="s33c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33
 pop.text({
-start: 348,
-end: 353,
+start: 351,
+end: 356,
 text:'<div id="s33" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s34
 pop.text({
-start: 353,
-end: 358,
+start: 356,
+end: 361,
 text:'<div id="s34" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s36
 pop.text({
-start: 357,
-end: 362,
+start: 361,
+end: 366,
 text:'<div id="s36" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s37
 pop.text({
-start: 362,
-end: 370,
+start: 366,
+end: 372,
 text:'<div id="s37" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s38
 pop.text({
-start: 370,
-end: 378,
+start: 372,
+end: 376,
 text:'<div id="s38" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s38b
+pop.text({
+start: 376,
+end: 382,
+text:'<div id="s38b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s39
 pop.text({
-start: 378,
+start: 382,
 end: 390,
 text:'<div id="s39" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -739,23 +785,22 @@ target:'chapter1'
 //s39g
 pop.text({
 start: 424,
-end: 434,
+end: 432,
 text:'<div id="s39g" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s40
-/*
+//s41a
 pop.text({
-start: 3,
-end: 490,
-text:'<div id="s40" class="segment animated fadeIn"></div>',
+start: 432,
+end: 439,
+text:'<div id="s41a" class="segment animated fadeIn"></div>',
 target:'chapter1'
-});*/
+});
 
 //s41
 pop.text({
-start: 434,
+start: 439,
 end: 452,
 text:'<div id="s41" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -769,26 +814,6 @@ end: 452,
 text:'<div id="s42" class="txt-overlay animated fadeIn"><h2 id="lm">Explore photos from Towanda at your own pace and join the conversation below &darr;</h2></div>',
 target:'chapter1'
 });
-
-/////////Part2
-pop.code({
-	start: 30,
-	end: 40,
-	onStart: function( options ) {  
-		$.smoothScroll({
-			speed: 800,
-			scrollTarget: '#chapter1',
-			afterScroll: function() {$("#c2").addClass("active");}
-			});
-			return false;
-	},
-	onEnd: function( options ) {$("#c2").removeClass("active");}
-});
-
-
-
-
-
 
 ////reference
 
