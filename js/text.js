@@ -510,24 +510,16 @@ target:'chapter1'
 //s21
 pop.text({
 start: 233,
-end: 248,
+end: 249,
 text:'<div id="s21"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s22
 pop.text({
-start: 238,
-end: 248,
-text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>The number of commitments to the Bradford Co. Correctional Facility jumped from 895 in 2008 to 1,065 in 2011.</h2></div>',
-target:'chapter1'
-});
-
-//s22a
-pop.text({
-start: 241,
-end: 248,
-text:'<div id="s22a" class="txt-overlay animated fadeIn"><h2>The number of commitments to the Bradford Co. Correctional Facility jumped from 895 in 2008 to 1,065 in 2011.</h2><h3>It is projected that there will be 1,319 commitments in 2012.</h3></div>',
+start: 240,
+end: 249,
+text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>The Bradford County\'s criminal caseload increased by 40% from 2009 to 2011</h2></div>',
 target:'chapter1'
 });
 
@@ -764,8 +756,17 @@ target:'chapter1'
 //s41
 pop.text({
 start: 434,
-end: 490,
+end: 452,
 text:'<div id="s41" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s42
+
+pop.text({
+start: 450,
+end: 452,
+text:'<div id="s42" class="txt-overlay animated fadeIn"><h2 id="lm">Explore photos from Towanda at your own pace and join the conversation below &darr;</h2></div>',
 target:'chapter1'
 });
 
