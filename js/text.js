@@ -127,6 +127,7 @@ pop.code({
 		//con2 added
 		$('#s30b').css('background-image', 'url(' + 'img/grace3.jpg' + ')');
 		$('#s31').css('background-image', 'url(' + 'img/taco-food.jpg' + ')');
+		$('#s31a').css('background-image', 'url(' + 'img/food-donations.jpg' + ')');
 		$('#s32').css('background-image', 'url(' + 'img/taco.jpg' + ')');
 		$('#s33').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
 		$('#s33a').css('background-image', 'url(' + 'img/truckseq1.jpg' + ')');
@@ -212,35 +213,35 @@ target:'chapter1'
 //maps
 
 pop.text({
-start: 63,
-end: 63.5,
+start: 59,
+end: 60,
 text:'<div class="map"><img src="img/map8.png" alt="2008"><p>2008: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 63.5,
-end: 64,
+start: 60,
+end: 61,
 text:'<div class="map"><img src="img/map9.png" alt="2009"><p>2009: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 64,
-end: 64.5,
+start: 61,
+end: 62,
 text:'<div class="map"><img src="img/map10.png" alt="2010"><p>2010: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 64.5,
-end: 65,
+start: 62,
+end: 63,
 text:'<div class="map"><img src="img/map11.png" alt="2011"><p>2011: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
 });
 
 pop.text({
-start: 65,
+start: 63,
 end: 67,
 text:'<div class="map"><img src="img/map12.png" alt="2012"><p>2012: Drilled wells in Bradford County.</p></div>',
 target:'chapter1'
@@ -651,33 +652,41 @@ text:'<div id="s31" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s32
+//s31a
 pop.text({
 start: 332,
-end: 340,
+end: 341,
+text:'<div id="s31a" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s32
+pop.text({
+start: 341,
+end: 345,
 text:'<div id="s32" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33a
 pop.text({
-start: 340,
-end: 343,
+start: 345,
+end: 347,
 text:'<div id="s33a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33b
 pop.text({
-start: 343,
-end: 347,
+start: 347,
+end: 349,
 text:'<div id="s33b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33c
 pop.text({
-start: 347,
+start: 349,
 end: 351,
 text:'<div id="s33c" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -815,47 +824,6 @@ end: 452,
 text:'<div id="s42" class="txt-overlay animated fadeIn"><h2 id="lm"><a href="#learn">Learn more about #NPRboomtown below &darr;</a></h2></div>',
 target:'chapter1'
 });
-
-////reference
-
-
-//Map
-/*pop.text({
-start: 53,
-end: 60,
-text:'<div id="tmap"><h2>Wells</h2><img src="img/towanda-map.gif" alt="towanda-map" width="600" height="393" /></div>',
-target:'chapter2'
-});*/
-
-//C1S3
-
-/*
-pop.text({
-start:'26',
-end:'40',
-text:'<div id="c1s3"><img src="img/wall-pictures.jpg" alt="wp"></div>',
-target:'chapter1'
-});
-*/
-
-/////////////// !photo 1
-
-/* 
-pop.code({
-	start: 80,
-	end: 80.5,
-	onStart: function( options ) {         
-		$.smoothScroll({
-			direction: 'left',
-			scrollElement: $('#chapter1'),
-			scrollTarget: '#photo1'
-		});
-		return false;
-	},
-	onEnd: function( options ) {}
-});
-*/
-
 
 /////////////// end     
 },false);
