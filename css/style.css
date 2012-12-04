@@ -589,11 +589,6 @@ border-right: 1px solid #888;
 opacity: .8;
 }
 
-
-.active {
-	background-color: blue;
-}
-
 .currentTime {
 text-align: right;
 font-size: 13px;
@@ -1127,6 +1122,31 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			opacity: .4;
 		}
 		
+		/*sales tax*/
+		#chapter1 #s18a h2 {
+			width: 450px;
+			font-size: 35px;
+		}
+		
+		/*crime*/
+		#chapter1 #s22 h2, #chapter1 #s22a h2 {
+			width: 450px;
+			font-size: 40px;
+		}
+		
+		/*rent*/
+
+		#s26a h2, #s26b h2, #s26c h2 {
+			width: 450px;
+			font-size: 24px !important;
+		}
+
+		#s26a h3, #s26b h3, #s26c h3 {
+			width: 350px;
+			font-size: 45px;
+			padding-top: 10px;
+		}
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1225,6 +1245,30 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			opacity: .7;
 		}
 		
+		/*sales tax*/
+		#chapter1 #s18a h2 {
+			width: 350px;
+			font-size: 30px;
+		}
+		
+		/*crime*/
+		#chapter1 #s22 h2, #chapter1 #s22a h2 {
+			width: 300px;
+			font-size: 24px;
+		}
+		
+		/*rent*/
+		#s26a h2, #s26b h2, #s26c h2 {
+			width: 350px;
+			font-size: 20px !important;
+			text-align: left;
+		}
+
+		#s26a h3, #s26b h3, #s26c h3 {
+			width: 350px;
+			font-size: 40px;
+			padding-top: 10px;
+		}
 		
 	}
 
