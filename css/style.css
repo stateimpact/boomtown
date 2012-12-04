@@ -182,7 +182,7 @@ speak: none;
 			left: 0;
 			position: absolute;
 			width: 100%;
-			z-index: 20;
+			z-index: 15;
 			
 		  }
 		  
@@ -201,7 +201,7 @@ speak: none;
 		    text-indent: -999em; 
 		    width: 192px; 
 		    height: 71px; 
-		    z-index: 500;
+		    z-index: 16;
 		    position: absolute;
 		    top: -10px;
 		    left: -15px;
@@ -473,7 +473,7 @@ width: 100%;
 	left: 0;
 	width: 100%;
 	background-color: #111;  
-	z-index: 200;
+	z-index: 15;
 	height: 30px;
 	border-top: 3px solid #000;
 	overflow: hidden;
