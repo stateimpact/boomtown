@@ -105,7 +105,7 @@ pop.code({
 		$('#s19').css('background-image', 'url(' + 'img/chesapeake.jpg' + ')');
 		$('#s20').css('background-image', 'url(' + 'img/marquee.jpg' + ')');
 		$('#s20a').css('background-image', 'url(' + 'img/gtp-manufacturing.jpg' + ')');
-		$('#s20b').css('background-image', 'url(' + 'img/gtp-factory-1.jpg' + ')');
+		$('#s20b').css('background-image', 'url(' + 'img/gtp-factory1.jpg' + ')');
 		$('#s20c').css('background-image', 'url(' + 'img/dupont.jpg' + ')');
 		$('#s20d').css('background-image', 'url(' + 'img/spanish.jpg' + ')');
 		$('#s21').css('background-image', 'url(' + 'img/welcome-towanda.jpg' + ')');
@@ -370,7 +370,7 @@ target:'chapter1'
 //s11c
 pop.text({
 start: 130,
-end: 137,
+end: 138,
 text:'<div id="s11c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
@@ -541,13 +541,13 @@ target:'chapter1'
 pop.text({
 start: 240,
 end: 248,
-text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>The Bradford County\'s criminal caseload increased by 40% from 2009 to 2011</h2></div>',
+text:'<div id="s22" class="txt-overlay animated fadeIn"><h2>Bradford County\'s criminal caseload increased by 40% from 2009 to 2011</h2></div>',
 target:'chapter1'
 });
 
 //s23
 pop.text({
-start: 249,
+start: 248,
 end: 256,
 text:'<div id="s23" class="segment animated fadeIn"></div>',
 target:'chapter1'
@@ -572,14 +572,14 @@ target:'chapter1'
 //s27-- classified
 pop.text({
 start: 269,
-end: 287,
+end: 289,
 text:'<div id="s27" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s26a
 pop.text({
-start: 270,
+start: 274,
 end: 287,
 text:'<div id="s26a" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2></div>',
 target:'chapter1'
@@ -587,7 +587,7 @@ target:'chapter1'
 
 //s26b
 pop.text({
-start: 272,
+start: 276,
 end: 287,
 text:'<div id="s26b" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2><h3>2008: $275-300</h3></div>',
 target:'chapter1'
@@ -595,7 +595,7 @@ target:'chapter1'
 
 //s26c
 pop.text({
-start: 277,
+start: 282,
 end: 287,
 text:'<div id="s26b" class="txt-overlay animated fadeIn"><h2>Cost of a 1 Bedroom Apartment:</h2><h3>2008: $275-300</h3><h3>2011: $1,000+</h3></div>',
 target:'chapter1'
@@ -657,7 +657,6 @@ text:'<div id="s32" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-/*CON ADDED NEXT THREE PIX */
 //s33a
 pop.text({
 start: 340,
@@ -809,9 +808,9 @@ target:'chapter1'
 //s42
 
 pop.text({
-start: 450,
+start: 441,
 end: 452,
-text:'<div id="s42" class="txt-overlay animated fadeIn"><h2 id="lm">Explore photos from Towanda at your own pace and join the conversation below &darr;</h2></div>',
+text:'<div id="s42" class="txt-overlay animated fadeIn"><h2 id="lm"><a href="#learn">Learn more about #NPRboomtown below &darr;</a></h2></div>',
 target:'chapter1'
 });
 
