@@ -1116,6 +1116,17 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			margin-right: 90px;
 		}
 		
+		/*feature player */
+		#feature-player a {
+			font-size: 80px;
+			color: #555;
+			box-shadow: 2px 2px 4px 0px #000;
+			margin-top: 160px;
+			width: 100px;
+			background-color: #bbb;
+			opacity: .4;
+		}
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -1154,16 +1165,18 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		#chapter1, .segment, .intro {height: 310px;}
 		
 		/*intro */
-		.intro h2 {
+		#chapter1 .intro h2 {
 			width: 320px;
 			font-size: 24px;
 			padding-top: 70px;
+			text-align: left;
+			padding-left: 20px;
 		}
 
 		.intro p {
 			font-size: 16px;
 			width: 290px;
-			padding-top: 20px;
+			padding-top: 10px;
 		}
 		
 		/*map*/
@@ -1198,6 +1211,18 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		
 		.carousel-nav {
 			height: 90px;
+		}
+		
+		/*feature player*/
+		
+		#feature-player a {
+			font-size: 60px;
+			color: #555;
+			box-shadow: 2px 2px 4px 0px #000;
+			margin-top: 110px;
+			width: 80px;
+			background-color: #bbb;
+			opacity: .7;
 		}
 		
 		

@@ -105,7 +105,7 @@ pop.code({
 		$('#s19').css('background-image', 'url(' + 'img/chesapeake.jpg' + ')');
 		$('#s20').css('background-image', 'url(' + 'img/marquee.jpg' + ')');
 		$('#s20a').css('background-image', 'url(' + 'img/gtp-manufacturing.jpg' + ')');
-		$('#s20b').css('background-image', 'url(' + 'img/gtp-factory1.jpg' + ')');
+		$('#s20b').css('background-image', 'url(' + 'img/outsiders.jpg' + ')');
 		$('#s20c').css('background-image', 'url(' + 'img/dupont.jpg' + ')');
 		$('#s20d').css('background-image', 'url(' + 'img/spanish.jpg' + ')');
 		$('#s21').css('background-image', 'url(' + 'img/welcome-towanda.jpg' + ')');
@@ -142,7 +142,7 @@ pop.code({
 	start: 50,
 	onStart: function( options ) {
 		$('#s37').css('background-image', 'url(' + 'img/old-man.jpg' + ')');
-		$('#s38').css('background-image', 'url(' + 'img/town-square-clock.jpg' + ')');
+		$('#s38').css('background-image', 'url(' + 'img/slow-downtown.jpg' + ')');
 		//con2 added
 		$('#s38b').css('background-image', 'url(' + 'img/slow.jpg' + ')');
 		$('#s39').css('background-image', 'url(' + 'img/restaurant-outside.jpg' + ')');
@@ -504,21 +504,23 @@ text:'<div id="s20a"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s20b
+//s20c
 pop.text({
 start: 215,
 end: 222,
+text:'<div id="s20c"  class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s20b
+pop.text({
+start: 222,
+end: 228,
 text:'<div id="s20b"  class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s20c
-pop.text({
-start: 222,
-end: 228,
-text:'<div id="s20c"  class="segment animated fadeIn"></div>',
-target:'chapter1'
-});
+
 
 /*CON ADDED IMAGE AND EDITED TIME */
 //s20d
@@ -724,14 +726,14 @@ target:'chapter1'
 //s38b
 pop.text({
 start: 376,
-end: 382,
+end: 385,
 text:'<div id="s38b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s39
 pop.text({
-start: 382,
+start: 385,
 end: 390,
 text:'<div id="s39" class="segment animated fadeIn"></div>',
 target:'chapter1'
