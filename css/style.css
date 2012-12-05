@@ -134,6 +134,7 @@ svg:not(:root) { overflow: hidden; }
 body {
 background-color: #111;
 font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+-webkit-backface-visibility: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
@@ -173,6 +174,46 @@ content: '\2389';
 content: attr(data-icon);
 speak: none; 
 }*/
+
+/*animation*/
+
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
 
 /************* HEADER ******************/
 
@@ -385,7 +426,6 @@ color: #fff;
 line-height: 1;
 margin: 0 auto;
 padding-top: 150px;
-cursor: pointer;
 }
 
 #s42 h2 a {
@@ -795,6 +835,8 @@ border: 1px solid #ddd;
 	margin-right: 110px;
 }
 
+#photogallery .slide-touch p {margin-right: 10px;}
+
 .carousel-nav {background-color: #111; height: 70px;}
 
 .carousel-nav a {
@@ -1015,11 +1057,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		
-		body {border-top: 3px solid red;}
-		
-		
-
+	
 		.jp-seek-bar p {font-size: 10px;}
 
 		.jp-seek-bar {width: 78% !important;}
@@ -1033,8 +1071,6 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		
-		body {border-top: 3px solid green;}
 
 		/*global header*/
 		#global-header h2 a { 
@@ -1147,12 +1183,17 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			padding-top: 10px;
 		}
 		
+		/*learn more*/
+		#s42 h2 {
+			width: 450px;
+			font-size: 40px;
+			text-align: center;
+		}
+		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-	
-		body {border-top: 3px solid blue;}
 		
 		#titlecard {height: 400px}
 		
@@ -1268,6 +1309,14 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 			width: 350px;
 			font-size: 40px;
 			padding-top: 10px;
+		}
+		
+		/*learn more */
+		#s42 h2 {
+			width: 320px;
+			font-size: 30px;
+			padding-top: 90px;
+			text-align: center;
 		}
 		
 	}
