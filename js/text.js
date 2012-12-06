@@ -697,14 +697,14 @@ target:'chapter1'
 //s33d-- start of quotes
 pop.text({
 start: 356,
-end: 361,
+end: 360,
 text:'<div id="s33d" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s34
 pop.text({
-start: 359,
+start: 358,
 end: 362,
 text:'<div id="s34" class="segment animated fadeIn"></div>',
 target:'chapter1'
