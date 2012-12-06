@@ -28,7 +28,28 @@ target:'chapter1'
 pop.text({
 start: 15,
 end: 32,
-text:'<div id="boom-intro3" class="intro animated fadeIn"><h2>The latest boom started in 2007</h2><p>This time: It\'s natural gas. The surrounding area of northeast Pennsylvania is now home to more natural gas wells than any other part of the state. For better or worse, life in town has changed.</p> <p>And for Towandans, one question looms: Does every boom have a bust?</p></div>',
+text:'<div id="boom-intro3" class="intro animated fadeIn"></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 15,
+end: 20,
+text:'<div id="boom-intro4" class="intro txt-overlay animated fadeIn"><h2>The latest boom started in 2007</h2></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 20,
+end: 25,
+text:'<div id="boom-intro5" class="intro txt-overlay animated fadeIn"><h2>This time: It\'s natural gas</h2></div>',
+target:'chapter1'
+});
+
+pop.text({
+start: 25,
+end: 30,
+text:'<div id="boom-intro6" class="intro txt-overlay animated fadeIn"><h2>For Towandans, One question looms: Does every boom have a bust?</h2></div>',
 target:'chapter1'
 });
 
@@ -124,10 +145,11 @@ pop.code({
 		$('#s31').css('background-image', 'url(' + 'img/taco-food.jpg' + ')');
 		$('#s31a').css('background-image', 'url(' + 'img/food-donations.jpg' + ')');
 		$('#s32').css('background-image', 'url(' + 'img/taco.jpg' + ')');
-		$('#s33').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
+		$('#s33').css('background-image', 'url(' + 'img/truck-flag.jpg' + ')');
 		$('#s33a').css('background-image', 'url(' + 'img/truckseq1.jpg' + ')');
 		$('#s33b').css('background-image', 'url(' + 'img/truckseq2.jpg' + ')');
 		$('#s33c').css('background-image', 'url(' + 'img/truckseq3.jpg' + ')');
+		$('#s33d').css('background-image', 'url(' + 'img/truck1.jpg' + ')');
 
 	}
 });
@@ -208,35 +230,35 @@ target:'chapter1'
 pop.text({
 start: 59,
 end: 60,
-text:'<div class="map"><img src="img/map8.png" alt="2008"><p>2008: Drilled wells in Bradford County.</p></div>',
+text:'<div class="map"><img src="img/map2008.png" alt="2008"></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 60,
 end: 61,
-text:'<div class="map"><img src="img/map9.png" alt="2009"><p>2009: Drilled wells in Bradford County.</p></div>',
+text:'<div class="map"><img src="img/map2009.png" alt="2009"></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 61,
 end: 62,
-text:'<div class="map"><img src="img/map10.png" alt="2010"><p>2010: Drilled wells in Bradford County.</p></div>',
+text:'<div class="map"><img src="img/map2010.png" alt="2010"></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 62,
 end: 63,
-text:'<div class="map"><img src="img/map11.png" alt="2011"><p>2011: Drilled wells in Bradford County.</p></div>',
+text:'<div class="map"><img src="img/map2011.png" alt="2011"></div>',
 target:'chapter1'
 });
 
 pop.text({
 start: 63,
 end: 67,
-text:'<div class="map"><img src="img/map12.png" alt="2012"><p>2012: Drilled wells in Bradford County.</p></div>',
+text:'<div class="map"><img src="img/map2012.png" alt="2012"></div>',
 target:'chapter1'
 });
 
@@ -640,55 +662,63 @@ text:'<div id="s32" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s33a
+//s33 -- truck flag
 pop.text({
 start: 345,
-end: 349,
+end: 355,
+text:'<div id="s33" class="segment animated fadeIn"></div>',
+target:'chapter1'
+});
+
+//s33a
+pop.text({
+start: 353,
+end: 355,
 text:'<div id="s33a" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33b
 pop.text({
-start: 347,
-end: 351,
+start: 354,
+end: 356,
 text:'<div id="s33b" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s33c
 pop.text({
-start: 349,
-end: 353,
+start: 355,
+end: 358,
 text:'<div id="s33c" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s33
+//s33d-- start of quotes
 pop.text({
-start: 351,
-end: 358,
-text:'<div id="s33" class="segment animated fadeIn"></div>',
+start: 356,
+end: 361,
+text:'<div id="s33d" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s34
 pop.text({
-start: 356,
-end: 363,
+start: 359,
+end: 362,
 text:'<div id="s34" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
 //s36
 pop.text({
-start: 361,
+start: 360,
 end: 368,
 text:'<div id="s36" class="segment animated fadeIn"></div>',
 target:'chapter1'
 });
 
-//s37
+//s37-- old man
 pop.text({
 start: 366,
 end: 374,

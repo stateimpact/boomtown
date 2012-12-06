@@ -306,7 +306,7 @@ margin: 0;
 	
 .intro h2 {
 width: 750px;
-font-size: 70px;
+font-size: 65px;
 font-weight: 900;
 text-transform: uppercase;
 text-align: center;
@@ -327,12 +327,6 @@ color: #fff;
 text-shadow: 2px 2px 1px #000;
 line-height: 1.1em;
 }
-
-#boom-intro b {
-text-transform: uppercase;
-font-size: 24px;
-}
-
 
 /***** OVERLAYS *****/
 /* sales tax */
@@ -530,7 +524,6 @@ width: 100%;
 	border-top: 3px solid #000;
 	overflow: hidden;
 	box-shadow: 0px 0px 7px 0px #222;
-	opacity: .9;
 	}
 
 .ab-nav a {color: #d3d3d3; display: block; line-height: 1;}
@@ -703,7 +696,7 @@ text-shadow: 2px 2px 1px #000;
 	background-size:cover;
 }
 
-.txt-overlay {
+#chapter1 .txt-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
