@@ -25,6 +25,7 @@
 	
 <link rel="stylesheet" href="css/style.css?ver=1">
 <link rel="stylesheet" href="css/skeleton.css">
+
 	<!-- Begin JavaScript -->
 <script type="text/javascript" src="http://use.typekit.com/yey2zgp.js"></script> 
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
@@ -84,12 +85,12 @@
 				supplied: "oga, mp3",
 				cssSelectorAncestor: "",
 				cssSelector: {
-					play: ".jp-play",
-					pause: ".jp-pause",
-					seekBar: ".jp-seek-bar",
-					playBar: ".jp-play-bar",
-					currentTime: ".currentTime",
-					duration: ".jp-duration"
+					play: ".bt-play",
+					pause: ".bt-pause",
+					seekBar: ".bt-seek-bar",
+					playBar: ".bt-play-bar",
+					currentTime: ".bt-currentTime",
+					duration: ".bt-duration"
 				}
 			});
 			
@@ -108,6 +109,10 @@
 		
 		</script>
 	<!-- End JavaScript -->
+	
+<!--[if lte IE 8 ]>
+<link rel="stylesheet" href="css/jplayer-black-and-yellow.css">
+<![endif]-->
 
 </head>
 <body id="top">
@@ -144,22 +149,22 @@
 	<div class="ab-nav">
 	<div class="panel-player">
 		<h4><span class="player-title"><b>Boom</b>Town</span>
-			<a href="javascript:;" class="jp-play icon-alone">
+			<a href="javascript:;" class="bt-play icon-alone">
 				<span aria-hidden="true" data-icon="&#x25B6;"></span>
 				<span class="screen-reader-text">Play</span>
 			</a>
-			<a href="javascript:;" class="jp-pause">
+			<a href="javascript:;" class="bt-pause">
 				<span aria-hidden="true" data-icon="&#x2389;"></span>
 				<span class="screen-reader-text">Pause</span>
 			</a>
 		</h4>
 		
 		<p>
-			<span class="jp-duration"></span>
+			<span class="bt-duration"></span>
 		</p>
 	
-		<div class="jp-seek-bar">
-			<div class="jp-play-bar">
+		<div class="bt-seek-bar">
+			<div class="bt-play-bar">
 			</div>
 			
 			<div id="c-markers">
@@ -168,7 +173,7 @@
 			<p id="toll">Toll</p>
 			<p id="slowdown">Bust?</p>
 			</div>
-		</div><!-- /jp-seek-bar -->
+		</div><!-- /bt-seek-bar -->
 	</div>
 	
 		<!-- audio player -->
@@ -204,7 +209,7 @@
 		<div class="eight columns">
 			<a class="twitter-timeline" href="https://twitter.com/search?q=%23NPRBoomTown" data-widget-id="276015814954586112">Tweets about "#NPRBoomTown"</a>
 
-		</div> 
+		</div><!--/eight-->
 		
 		<div id="photogallery" class="sixteen columns">
 		<h2>Explore the photos from Boomtown at your own pace and learn more about Towanda</h2>
@@ -216,7 +221,43 @@
 					<span class="swipe-info">Swipe to view more photos ></span>
 				</div>
 			</div>
-	 </div>
+	 </div><!--/photogallery -->
+	
+	<div id="oldaudio" class="sixteen columns">
+	<h2>Hear the Story of Boomtown</h2>
+		<div id="oldplayer" class="jp-jplayer"></div>
+		
+		<div class="jp-audio-container">
+			<div class="jp-audio">
+				<div class="jp-type-single">
+				
+					<div id="jp_interface_1" class="jp-interface">
+						<ul class="jp-controls">
+							<li><a href="#" class="jp-play" tabindex="1">play</a></li>
+							<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+							
+							<li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
+							<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+							
+						</ul>
+						<div class="jp-progress-container">
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="jp-volume-bar-container">
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/oldaudio -->
 		
 		<h2 id="rc" class="sixteen columns">Learn more about the natural gas boom in Pennsylvania </h2>
 		<div class="four columns">
@@ -265,8 +306,28 @@
 <!--[if lte IE 8 ]>
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
 	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#oldplayer").jPlayer({
+				ready: function () {
+					$(this).jPlayer("setMedia", {
+						mp3: "boom123.mp3",
+						oga: "boom123.ogg"
+					}).jPlayer("pause");
+				},
+				play: function() { // To avoid both jPlayers playing together.
+					$(this).jPlayer("pauseOthers");
+				},
+				ended: function (event) {
+					$(this).jPlayer("pause");
+				},
+				swfPath: "js",
+				supplied: "oga, mp3",
+			});
+		});
+	</script>
 <![endif]-->
-
 
 <!-- /// LOAD CHARTBEAT /// -->
 <script type="text/javascript">
