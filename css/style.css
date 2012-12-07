@@ -940,7 +940,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		
 		/*segments*/
 		
-		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay {height: 620px;}
+		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay, #chapter1 .map {height: 620px;}
 				
 	}
 
@@ -983,7 +983,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		.bt-seek-bar {width: 65% !important;}
 		
 		/*segments*/
-		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay {height: 470px;}
+		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay, #chapter1 .map {height: 470px;}
 		
 		#chapter1 h2 {
 			font-size: 45px;
@@ -1098,7 +1098,7 @@ footer .boilerplate a, footer .boilerplate a:visited { color: #999; }
 		.bt-seek-bar p {display: none;}
 		
 		/*segments*/
-		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay {height: 310px;}
+		#chapter1, .segment, #chapter1 .intro, #chapter1 .txt-overlay, #chapter1 .map {height: 310px;}
 		
 		/*intro */
 		#chapter1 .intro h2 {
