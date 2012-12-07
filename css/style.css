@@ -139,7 +139,7 @@ font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
 
 h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
 
-/* Data Icon */
+/* Data Icons by Daniel Bruce entypo.com*/
 
 @font-face {
     font-family: 'fontello';
@@ -153,16 +153,16 @@ h1, h2, h3, h4, h5, h6 {  font-weight: normal;}
 }
 
 [data-icon]:before {
-  font-family: fontello; /* BYO icon font, mapped smartly */
+  font-family: fontello;
   content: attr(data-icon);
-  speak: none; /* Not to be trusted, but hey. */
+  speak: none; 
 }
 
 .icon-alone {
-  display: inline-block; /* Chrome 19 was weird with clickability without this */
+  display: inline-block; 
 }
 
-.screen-reader-text { /* Reusable, toolbox kind of class */
+.screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
